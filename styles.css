@@ -31,7 +31,7 @@ header {
   position: relative;
   /* padding: 30px, 10%;
     margin-bottom: 2rem; */
-  /* background-color: #f0e9e9; */
+  background-color: #f0e9e9;
 }
 
 .nav {
@@ -111,7 +111,11 @@ button:hover {
 .container {
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.418),
+      rgba(0, 0, 0, 0.876)
+    ),
     url(bpic.jpg);
   height: 100vh;
   z-index: -99;
@@ -146,10 +150,10 @@ img {
   font-size: 45px;
 }
 .icon-learn {
-  color: rgba(240, 29, 29, 0.979);
+  color: #137cf3f6;
 }
 .icon-play {
-  color: #137cf3f6;
+  color: rgba(240, 29, 29, 0.979);
 }
 .icon-meal {
   color: rgb(53, 155, 22);
@@ -159,7 +163,6 @@ img {
 .b,
 .c {
   position: relative;
-
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -167,12 +170,6 @@ img {
   left: 2.7rem;
   top: -2rem;
   text-transform: uppercase;
-  color: rgba(240, 29, 29, 0.979);
-}
-
-.b {
-  left: 3.8rem;
-  top: -2rem;
   color: #137cf3f6;
 }
 
@@ -192,9 +189,12 @@ img {
   font-weight: 800;
   text-transform: uppercase;
   z-index: 0;
-  margin: 0;
+  margin-left: 1rem;
   padding: 0;
-  color: #137cf3f6;
+}
+
+.b {
+  color: rgba(240, 29, 29, 0.979);
 }
 .fix {
   position: relative;
