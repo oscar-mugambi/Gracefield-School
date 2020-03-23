@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cabin+Sketch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../../font.ttf);
+}
+
+body {
+  position: relative;
+  min-width: 80%;
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #137cf3f6;
+  text-decoration: none;
+}
+
+.nav {
+  position: relative;
+  width: 100%;
+  height: 7rem;
+  background-color: transparent;
+  overflow: hidden;
+  background-color: rgb(248, 248, 248);
+}
+
+.position {
+  position: relative;
+  display: inline-block;
+  margin-left: 11%;
+}
+.nav2 {
+  position: relative;
+  left: 58%;
+  display: inline-block;
+}
+
+.nav a {
+  font-weight: bold;
+  margin: 0 1.8rem;
+}
+
+.logo {
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  height: 6rem;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  top: 7px;
+  margin: 0 0.5rem;
+}
+
+.nav__links {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav__links li {
+  display: inline-block;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  font-size: 20px;
+}
+
+.a-tags {
+  position: relative;
+}
+.a-tags::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 100%;
+  height: 3px;
+  background: currentColor;
+  transform: scale(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+  z-index: 33;
+}
+
+.nav__links li a:hover::after {
+  transform: scale(1);
+  transform-origin: left;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.right {
+  margin-left: 3rem;
+}
+
+.activity-container {
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 5rem;
+  z-index: 100;
+  position: relative;
+  width: 40%;
+  display: inline-block;
+  margin-bottom: 3rem;
+  transition: transform 0.3s ease-in;
+  border-radius: 10px;
+}
+
+.activity-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  display: block;
+  bottom: -28px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hidden-text {
+  position: absolute;
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+  display: block;
+  bottom: -28px;
+  background-color: #f55b75;
+  color: white;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.a {
+  background-image: linear-gradient(to bottom, #f953c6, #b91d73);
+}
+.b {
+  /* background-color: #004c97; */
+  background-image: linear-gradient(to bottom, #373b44, #4286f4);
+}
+.c {
+  background-image: linear-gradient(to bottom, #419573, #32ad8b);
+}
+
+.d {
+  background-image: linear-gradient(to bottom, #5f0a87, #a4508b);
+}
+
+.sub-text {
+  position: relative;
+  bottom: 3rem;
+}
+.head {
+  margin-bottom: 5rem;
+  border-bottom: 1px dotted #fff;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.hidden-text:hover {
+  opacity: 1;
+  border: 1px;
+  border-radius: 15px;
+}
+
+.activity-container:hover {
+  transform: scale(1.03);
+  border: 1px;
+  border-radius: 15px;
+}
