@@ -2,9 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin+Sketch&display=swap");
 
 * {
-  box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -13,130 +15,121 @@
 }
 
 body {
-  position: relative;
-  overflow: hidden;
-  min-width: 80%;
-}
-
-li,
-a,
-button {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #137cf3f6;
-  text-decoration: none;
 }
 
-.nav {
-  position: relative;
-  width: 100%;
+nav {
+  padding-top: 1rem;
   height: 7rem;
-  background-color: transparent;
-  overflow: hidden;
-  background-color: rgb(248, 241, 241);
-}
-
-.position {
-  position: relative;
-  display: inline-block;
-  margin-left: 11%;
-}
-.nav2 {
-  position: relative;
-  left: 58%;
-  display: inline-block;
-}
-
-.nav a {
-  font-weight: bold;
-  margin: 0 1.8rem;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
 }
 
 .logo {
-  cursor: pointer;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
   height: 6rem;
-  width: auto;
-  padding: 0;
-  margin: 0;
-  top: 7px;
-  margin: 0 0.5rem;
 }
 
-.nav__links {
-  list-style: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.nav__links li {
+nav ul li {
   display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
 
-.nav__links li a {
-  transition: all 0.3s ease 0s;
-  font-size: 20px;
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 
-.a-tags {
-  position: relative;
+a.active,
+a:hover {
+  background: #1a9bff;
+  transition: 0.5s;
 }
-.a-tags::after {
-  content: "";
+
+.check-btn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+.container {
   position: absolute;
-  left: 0;
-  bottom: -0.5rem;
-  width: 100%;
-  height: 3px;
-  background: currentColor;
-  transform: scale(0);
-  transform-origin: right;
-  transition: transform 250ms ease-in;
-  z-index: 33;
+  top: 0rem;
+  bottom: 0;
+  left: 0rem;
+  right: 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../../img/curriculum.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100vw;
+  max-height: 100vh;
+  z-index: -99;
 }
 
-.nav__links li a:hover::after {
-  transform: scale(1);
-  transform-origin: left;
+.logo {
+  height: 6rem;
+}
+
+.about {
+  width: 96%;
+  margin: auto;
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  line-height: 1.9rem;
+  display: flex;
+  font-family: Montserrat;
+  /* padding: 3rem; */
+  margin-top: 3rem;
 }
 
 .welcome {
-  margin: auto;
+  position: absolute;
+  width: 100%;
+  /* text-align: center; */
+
   font-size: 1.7rem;
   color: #137cf3f6;
   font-family: Montserrat;
   font-weight: bold;
-  margin-bottom: 2rem;
-  text-align: center;
-  margin-top: 2rem;
 }
 
-.about {
-  width: 80%;
-  margin-left: 9rem;
-  font-size: 1rem;
-  letter-spacing: 0.8px;
-  line-height: 1.8rem;
-  display: flex;
-  font-family: Montserrat;
+.span-welcome {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 15px;
+  margin-top: 1rem;
 }
-
 .about-p {
-  opacity: 0.8;
+  opacity: 0.9;
+  color: #fff;
+  width: 70%;
+  margin-left: 3rem;
+  margin-right: 4rem;
 }
 
-.container {
-  width: 95%;
-  margin: auto;
-}
-
-.container-ul {
-  display: flex;
-  list-style: none;
+.about-p span {
+  width: 100%;
+  color: #137cf3f6;
+  font: 1.5rem;
+  font-weight: bold;
 }
 
 .image {
@@ -153,4 +146,57 @@ button {
   font-weight: bold;
   color: black;
   opacity: 1;
+}
+.column img {
+  opacity: 0.8; /* makes image darker */
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: opacity 1s, -webkit-transform 0.8s;
+  transition: transform 0.8s, opacity 1s;
+  transition: transform 0.8s, opacity 1s, -webkit-transform 0.8s;
+}
+
+.column img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 10000;
+}
+
+.row {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 7px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 29%;
+  max-width: 29%;
+  padding: 0 10px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

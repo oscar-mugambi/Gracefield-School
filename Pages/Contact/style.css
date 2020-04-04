@@ -1,107 +1,66 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cabin+Sketch&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:500&display=swap");
 * {
-  box-sizing: border-box;
-  margin: 0;
   padding: 0;
-  font-family: Montserrat;
-}
-
-@font-face {
-  font-family: myFirstFont;
-  src: url(../../Cabin_Sketch/CabinSketch-Bold.ttf);
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 body {
-  position: relative;
-  min-width: 80%;
-}
-
-li,
-a,
-button {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #137cf3f6;
-  text-decoration: none;
-}
-.nav {
-  position: relative;
-  width: 100%;
-  height: 7rem;
-  background-color: transparent;
   overflow: hidden;
-  background-color: rgb(255, 255, 255);
 }
 
-.position {
-  position: relative;
-  display: inline-block;
-  margin-left: 11%;
-}
-.nav2 {
-  position: relative;
-  left: 58%;
-  display: inline-block;
-}
-
-.nav a {
-  font-weight: bold;
-  margin: 0 1.8rem;
+nav {
+  padding-top: 1rem;
+  height: 6rem;
+  max-width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .logo {
-  cursor: pointer;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
   height: 6rem;
-  width: auto;
-  padding: 0;
-  margin: 0;
-  top: 7px;
-  margin: 0 0.5rem;
 }
 
-.nav__links {
-  list-style: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.nav__links li {
+nav ul li {
   display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
 
-.nav__links li a {
-  transition: all 0.3s ease 0s;
-  font-size: 20px;
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 
-.a-tags {
-  position: relative;
-}
-.a-tags::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -0.5rem;
-  width: 100%;
-  height: 3px;
-  background: currentColor;
-  transform: scale(0);
-  transform-origin: right;
-  transition: transform 250ms ease-in;
-  z-index: 33;
+a.active,
+a:hover {
+  background: #1a9bff;
+  transition: 0.5s;
 }
 
-.nav__links li a:hover::after {
-  transform: scale(1);
-  transform-origin: left;
+.check-btn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
 }
 
 button:hover {
@@ -109,55 +68,50 @@ button:hover {
 }
 
 .container {
-  background-size: cover;
-  background-position: center;
+  position: absolute;
+  top: 0rem;
+  bottom: 0;
+  left: 0rem;
+  right: 0;
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.718),
-      rgba(0, 0, 0, 0.876)
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5)
     ),
-    url(../../bpic1.jpg);
-
-  height: 100vh;
+    url(../../img/curriculum.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100vw;
+  max-height: 100vh;
   z-index: -99;
 }
 
-.text {
-  position: absolute;
-  color: #fff;
-  top: 5rem;
-  font-size: 3.5rem;
-  font-family: "Lato", sans-serif;
-  width: 60%;
-  margin-left: 30%;
-  top: 18%;
-  color: #137cf3f6;
-}
 h3 {
   color: #137cf3f6;
   font-size: 1.7rem;
   font-family: "Lato";
 }
 
-.form-container {
-  position: absolute;
-  top: 30%;
-  left: 22%;
+.contact-us {
+  position: relative;
+  display: flex;
+  justify-items: space-evenly;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+  margin-left: 9rem;
+}
 
-  margin: 0 auto;
-  width: 28rem;
-  height: 26rem;
+.form-container {
+  width: 40%;
 }
 
 .adjacent {
-  position: absolute;
-  top: 33%;
-  left: 56%;
   width: 32rem;
   height: 22rem;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
-  padding: 0 2rem 2rem 2rem;
+  padding: 0 2rem 0 2rem;
   line-height: 4.1rem;
   letter-spacing: 0.4px;
 }
@@ -250,7 +204,8 @@ input:focus ~ .label {
   font-size: 11px;
 }
 
-.information {
+.information,
+.information:visited {
   color: #137cf3f6;
 }
 
@@ -270,5 +225,5 @@ input:focus ~ .label {
 }
 
 .icon:hover {
-  color: rgba(40, 22, 200, 0.596);
+  color: rgba(168, 163, 221, 0.596);
 }

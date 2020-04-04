@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,58 +7,81 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="nav">
-      <ul class="nav__links position">
+    <nav class="flex">
+      <ul class="nav__links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../About/About.html">About Us</a></li>
         <li>
-          <a class="a-tag" href="../../index.html">Home</a>
-        </li>
-        <li>
-          <a class="a-tag" href="../About/About.html">About Us</a>
-        </li>
-        <li>
-          <a class="a-tag" href="../Curricular/curricular.html">Curriculum</a>
+          <a href="../Curricular/curricular.html">Curriculum</a>
         </li>
       </ul>
       <img class="logo" src="../../logo.png" alt="" />
-      <ul class="nav__links nav2">
+
+      <ul class="nav_links2">
         <li>
-          <a class="a-tag" href="../Extra/extra.html">Extra Curricular</a>
+          <a href="../Extra/extra.html">Extra Curricular</a>
         </li>
         <li>
-          <a class="a-tag" href="Gallery.html">Gallery</a>
+          <a class="active" href="../Gallery/Gallery.html">Gallery</a>
         </li>
         <li>
-          <a class="a-tag" href="../Contact/Contact.html">Contact Us</a>
+          <a class="a-tags" href="../Contact/Contact.html">Contact Us</a>
         </li>
       </ul>
     </nav>
-    <div class="carousel">
-      <button class="carousel__button carousel__button--left is-hidden">
-        <img class="carousel__image" src="../../img/left.svg" alt="" />
-      </button>
-      <div class="carousel__track-container">
-        <ul class="carousel__track">
-          <li class="carousel__slide current-slide">
-            <img src="../../img/ballet.jpg" alt="" />
-          </li>
-          <li class="carousel__slide">
-            <img src="../../img/camp.png" alt="" />
-          </li>
-          <li class="carousel__slide">
-            <img src="../../img/running.jpg" alt="" />
-          </li>
+    <div class="encapsulate">
+      <div class="image-menu">
+        <ul class="list">
+          <a href="classwork.html"><li class="li-menu">Classwork</li></a>
+          <a href="classwork.html"><li class="li-menu">In The Class</li></a>
+          <a href="play.html"><li class="li-menu">Sports</li></a>
+          <a href="play.html"><li class="li-menu">Digital</li></a>
         </ul>
       </div>
-      <button class="carousel__button carousel__button--right">
-        <img class="carousel__image" src="../../img/right.svg" alt="" />
-      </button>
 
-      <div class="carousel__nav">
-        <button class="carousel__indicator current-slide"></button>
-        <button class="carousel__indicator"></button>
-        <button class="carousel__indicator"></button>
+      <div class="carousel">
+        <button class="carousel__button carousel__button--left is-hidden">
+          <img class="carousel__image" src="../../img/left.svg" alt="" />
+        </button>
+        <div class="carousel__track-container">
+          <ul class="carousel__track">
+            <li class="carousel__slide current-slide">
+              <img
+                src="../../img/ballet.jpg"
+                width="1016.97"
+                height="600"
+                alt=""
+              />
+            </li>
+            <li class="carousel__slide">
+              <img
+                src="../../img/camp.png"
+                width="1016.97"
+                height="600"
+                alt=""
+              />
+            </li>
+            <li class="carousel__slide">
+              <img
+                src="../../img/running.jpg"
+                width="1016.97"
+                height="600"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <button class="carousel__button carousel__button--right">
+          <img class="carousel__image" src="../../img/right.svg" alt="" />
+        </button>
+
+        <div class="carousel__nav">
+          <button class="carousel__indicator current-slide"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+        </div>
       </div>
     </div>
     <script src="../../js/carousel.js"></script>
   </body>
-</html> -->
+</html>
