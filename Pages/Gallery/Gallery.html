@@ -9,79 +9,82 @@
   <body>
     <nav class="flex">
       <ul class="nav__links">
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="../About/About.html">About Us</a></li>
-        <li>
+        <li class="nav__links-li"><a href="../../index.html">Home</a></li>
+
+        <!-- <li class="nav__links-li">
+          <a href="../About/About.html">About Us</a>
+        </li>
+        <li class="nav__links-li">
           <a href="../Curricular/curricular.html">Curriculum</a>
         </li>
-      </ul>
-      <img class="logo" src="../../logo.png" alt="" />
 
-      <ul class="nav_links2">
-        <li>
+        <li class="nav__links-li">
           <a href="../Extra/extra.html">Extra Curricular</a>
-        </li>
-        <li>
+        </li> -->
+        <li class="nav__links-li">
           <a class="active" href="../Gallery/Gallery.html">Gallery</a>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <a href="classwork.html">Classwork</a>
+              </li>
+              <li>
+                <a href="classwork.html">In The Class</a>
+              </li>
+              <li>
+                <a href="play.html">Sports</a>
+              </li>
+              <li>
+                <a href="play.html">Digital</a>
+              </li>
+            </ul>
+          </div>
         </li>
-        <li>
+
+        <!-- <li class="nav__links-li">
           <a class="a-tags" href="../Contact/Contact.html">Contact Us</a>
-        </li>
+        </li> -->
       </ul>
     </nav>
-    <div class="encapsulate">
-      <div class="image-menu">
-        <ul class="list">
-          <a href="classwork.html"><li class="li-menu">Classwork</li></a>
-          <a href="classwork.html"><li class="li-menu">In The Class</li></a>
-          <a href="play.html"><li class="li-menu">Sports</li></a>
-          <a href="play.html"><li class="li-menu">Digital</li></a>
+
+    <div class="carousel">
+      <button class="carousel__button carousel__button--left is-hidden">
+        <img class="carousel__image" src="../../img/left.svg" alt="" />
+      </button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide current-slide">
+            <img
+              src="../../img/ballet.jpg"
+              width="1016.97"
+              height="600"
+              alt=""
+            />
+          </li>
+          <li class="carousel__slide">
+            <img src="../../img/camp.png" width="1016.97" height="600" alt="" />
+          </li>
+          <li class="carousel__slide">
+            <img
+              src="../../img/running.jpg"
+              width="1016.97"
+              height="600"
+              alt=""
+            />
+          </li>
         </ul>
       </div>
+      <button class="carousel__button carousel__button--right">
+        <img class="carousel__image" src="../../img/right.svg" alt="" />
+      </button>
 
-      <div class="carousel">
-        <button class="carousel__button carousel__button--left is-hidden">
-          <img class="carousel__image" src="../../img/left.svg" alt="" />
-        </button>
-        <div class="carousel__track-container">
-          <ul class="carousel__track">
-            <li class="carousel__slide current-slide">
-              <img
-                src="../../img/ballet.jpg"
-                width="1016.97"
-                height="600"
-                alt=""
-              />
-            </li>
-            <li class="carousel__slide">
-              <img
-                src="../../img/camp.png"
-                width="1016.97"
-                height="600"
-                alt=""
-              />
-            </li>
-            <li class="carousel__slide">
-              <img
-                src="../../img/running.jpg"
-                width="1016.97"
-                height="600"
-                alt=""
-              />
-            </li>
-          </ul>
-        </div>
-        <button class="carousel__button carousel__button--right">
-          <img class="carousel__image" src="../../img/right.svg" alt="" />
-        </button>
-
-        <div class="carousel__nav">
-          <button class="carousel__indicator current-slide"></button>
-          <button class="carousel__indicator"></button>
-          <button class="carousel__indicator"></button>
-        </div>
+      <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
       </div>
     </div>
+
     <script src="../../js/carousel.js"></script>
   </body>
 </html>

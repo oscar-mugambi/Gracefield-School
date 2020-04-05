@@ -7,37 +7,48 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="nav">
-      <ul class="nav__links position">
-        <li>
-          <a class="a-tags" href="../../index.html">Home</a>
+    <nav class="flex">
+      <ul class="nav__links">
+        <li class="nav__links-li"><a href="../../index.html">Home</a></li>
+        <li class="nav__links-li">
+          <a href="../About/About.html">About Us</a>
         </li>
-        <li>
-          <a class="a-tags" href="../About/About.html">About Us</a>
-        </li>
-        <li>
-          <a class="a-tags" href="../Curricular/curricular.html">Curriculum</a>
+        <li class="nav__links-li">
+          <a href="../Curricular/curricular.html">Curriculum</a>
         </li>
       </ul>
       <img class="logo" src="../../logo.png" alt="" />
-      <ul class="nav__links nav2">
-        <li>
-          <a class="a-tags" href="../Extra/extra.html">Extra Curricular</a>
+
+      <ul class="nav__links">
+        <li class="nav__links-li">
+          <a href="../Extra/extra.html">Extra Curricular</a>
         </li>
-        <li>
-          <a class="a-tags" href="Gallery.html">Gallery</a>
+        <li class="nav__links-li">
+          <a class="active" href="../Gallery/Gallery.html">Gallery</a>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <a href="classwork.html">Classwork</a>
+              </li>
+              <li>
+                <a href="classwork.html">In The Class</a>
+              </li>
+              <li>
+                <a href="play.html">Sports</a>
+              </li>
+              <li>
+                <a href="play.html">Digital</a>
+              </li>
+            </ul>
+          </div>
         </li>
-        <li>
+
+        <li class="nav__links-li">
           <a class="a-tags" href="../Contact/Contact.html">Contact Us</a>
         </li>
       </ul>
     </nav>
-    <div class="image-menu">
-      <li class="li-menu"><span><a href="schooltrip.html"> School Trip</span></a></li>
-      <li class="li-menu"><span><a href="classwork.html"> In The Class</a></span></li>
-      <li class="li-menu"><span><a href="play.html"> Sports</a></span></li>
-      <li class="li-menu"><span><a href="digital.html"> Digital</a></span></li>
-    </div>
+
     <div class="carousel">
       <button class="carousel__button carousel__button--left is-hidden">
         <img class="carousel__image" src="../../img/left.svg" alt="" />
@@ -75,6 +86,7 @@
         <button class="carousel__indicator"></button>
       </div>
     </div>
+
     <script src="../../js/carousel.js"></script>
   </body>
 </html>

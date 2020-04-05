@@ -65,6 +65,7 @@ a:hover {
   display: none;
 }
 .container {
+  transform: scaleX(-1);
   position: absolute;
   top: 0rem;
   bottom: 0;
@@ -72,10 +73,10 @@ a:hover {
   right: 0;
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.4)
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0)
     ),
-    url(../../img/curricular2.jpg);
+    url(../../img/bg3.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -87,7 +88,7 @@ a:hover {
   display: flex;
   top: 5rem;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   height: 25rem;
   justify-content: center;
 }
@@ -104,4 +105,23 @@ a:hover {
   color: white;
   font-size: 1.3rem;
   overflow: hidden;
+}
+
+.li-list {
+  position: relative;
+}
+
+li img {
+  position: absolute;
+  top: 5px;
+  height: 25px;
+}
+
+li p {
+  position: relative;
+  left: 35px;
+}
+
+li img {
+  color: black;
 }
