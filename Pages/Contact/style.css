@@ -95,11 +95,11 @@ h3 {
 .contact-us {
   position: relative;
   display: flex;
-  justify-items: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-top: 3rem;
   width: 100%;
-  margin-left: 9rem;
+  /* margin-left: 11rem; */
 }
 
 .form-container {
