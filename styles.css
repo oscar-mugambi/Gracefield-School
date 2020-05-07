@@ -94,7 +94,7 @@ a:hover {
   transform: scaleX(-1);
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 0rem;
   right: 0;
   left: 0;
   background-size: cover;
@@ -237,7 +237,9 @@ a:hover {
     top: -15px;
     color: rgb(219, 219, 22);
   }
-
+  .active-responsive {
+    background-color: rgba(24, 24, 24, 0.493);
+  }
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -279,8 +281,8 @@ a:hover {
     flex-flow: column wrap;
     align-items: flex-start;
     height: 100vh;
-    transform: translate3d(0, -110%, 0);
-    transition: all 0.9s ease-out;
+    transform: translate3d(110%, 0%, 0);
+    transition: all 0.6s ease-out;
     background-color: rgb(35, 74, 202);
     z-index: 100000;
     opacity: 1;
@@ -292,24 +294,21 @@ a:hover {
   }
 
   .nav-item {
-    color: black;
-    width: 100%;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    padding-left: 1rem;
-    font-size: 1.3rem;
+    height: 70px;
     border-top: 2px solid rgba(255, 255, 255, 0.349);
+    width: 100%;
   }
 
   .nav-item:first-child {
-    margin-top: 0.2rem;
+    margin-top: 0rem;
     border-top: none;
   }
   .anchor-item:visited,
   .anchor-item:link {
     color: rgb(224, 221, 221);
     position: relative;
-    top: 11px;
+    top: 24px;
+    margin-left: 1rem;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
