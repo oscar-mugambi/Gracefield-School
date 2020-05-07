@@ -37,12 +37,12 @@ const hideShowArrows = (slides, prevbutton, nextButton, targetIndex) => {
   }
 };
 
-prevButton.addEventListener("click", e => {
+prevButton.addEventListener("click", (e) => {
   const currentSlide = track.querySelector(".current-slide");
   const prevSlide = currentSlide.previousElementSibling;
   const currentDot = dotsNav.querySelector(".current-slide");
   const prevDot = currentDot.previousElementSibling;
-  const prevIndex = slides.findIndex(slide => slide === prevSlide);
+  const prevIndex = slides.findIndex((slide) => slide === prevSlide);
   moveToSlide(track, currentSlide, prevSlide);
   updateDots(currentDot, prevDot);
   hideShowArrows(slides, prevButton, nextButton, prevIndex);
@@ -50,26 +50,26 @@ prevButton.addEventListener("click", e => {
 
 //click on right button
 
-nextButton.addEventListener("click", e => {
+nextButton.addEventListener("click", (e) => {
   //move the slide
   const currentSlide = track.querySelector(".current-slide");
   const nextSlide = currentSlide.nextElementSibling;
   const currentDot = dotsNav.querySelector(".current-slide");
   const nextDot = currentDot.nextElementSibling;
-  const nextIndex = slides.findIndex(slide => slide === nextSlide);
+  const nextIndex = slides.findIndex((slide) => slide === nextSlide);
 
   moveToSlide(track, currentSlide, nextSlide);
   updateDots(currentDot, nextDot);
   hideShowArrows(slides, prevButton, nextButton, nextSlide);
 });
 
-dotsNav.addEventListener("click", e => {
+dotsNav.addEventListener("click", (e) => {
   const targetDot = e.target.closest("button");
 
   if (!targetDot) return;
   const currentSlide = track.querySelector(".current-slide");
   const currentDot = dotsNav.querySelector(".current-slide");
-  const targetIndex = dots.findIndex(dot => dot === targetDot);
+  const targetIndex = dots.findIndex((dot) => dot === targetDot);
   const targetSlide = slides[targetIndex];
   console.log(targetIndex);
 
