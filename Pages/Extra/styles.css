@@ -254,7 +254,7 @@ a:hover {
     transition: all 0.6s ease-out;
     background-color: rgb(35, 74, 202);
     z-index: 100000;
-    opacity: 0;
+    display: flex;
     position: relative;
   }
   .update {
@@ -288,6 +288,7 @@ a:hover {
     color: black;
   }
   .show {
+    display: flex;
     /* transform: translate3d(0, 0, 0); */
     animation-duration: 0.5s;
     animation-name: slidein;
