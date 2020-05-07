@@ -253,13 +253,16 @@ a:hover {
   }
 
   .nav-item {
-    color: black;
+    /* color: black;
     width: 100%;
     font-weight: bold;
     margin-bottom: 1.5rem;
     padding-left: 1rem;
     font-size: 1.3rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.349); */
+    height: 70px;
     border-top: 2px solid rgba(255, 255, 255, 0.349);
+    width: 100%;
   }
 
   .nav-item:first-child {
@@ -270,7 +273,9 @@ a:hover {
   .anchor-item:link {
     color: rgb(224, 221, 221);
     position: relative;
-    top: 11px;
+    top: 24px;
+    margin-left: 1rem;
+
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
@@ -364,5 +369,8 @@ a:hover {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.568);
     z-index: 100000;
+  }
+  .active-responsive {
+    background-color: rgba(24, 24, 24, 0.493);
   }
 }
