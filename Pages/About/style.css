@@ -112,14 +112,13 @@ a:hover {
   line-height: 1.9rem;
   display: flex;
   font-family: Montserrat;
-  /* padding: 3rem; */
+
   margin-top: 3rem;
 }
 
 .welcome {
   position: absolute;
   width: 100%;
-  /* text-align: center; */
 
   font-size: 1.7rem;
   color: #137cf3f6;
@@ -132,7 +131,6 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   padding-left: 15px;
-  margin-top: 1rem;
 }
 .about-p {
   opacity: 0.9;
@@ -164,8 +162,8 @@ a:hover {
   color: black;
   opacity: 1;
 }
-.column img {
-  opacity: 0.8; /* makes image darker */
+/* .column img {
+  opacity: 0.8;
   width: 100%;
   height: auto;
   -webkit-transform: scale(1.1);
@@ -189,7 +187,6 @@ a:hover {
   padding: 0 7px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
   flex: 29%;
   max-width: 29%;
@@ -200,7 +197,7 @@ a:hover {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
-}
+} */
 
 @media (max-width: 1000px) {
   .flex {
@@ -222,6 +219,68 @@ a:hover {
     height: 3rem;
     position: relative;
     top: -4px;
+  }
+
+  .show {
+    visibility: visible;
+  }
+
+  .column-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10000;
+  }
+  .column {
+    position: absolute;
+  }
+
+  .mobile-links {
+    display: flex;
+    width: 13rem;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    height: 100vh;
+    transform: translate3d(0, -110%, 0);
+    transition: all 0.9s ease-out;
+    background-color: rgb(35, 74, 202);
+    z-index: 100000;
+    opacity: 1;
+    position: relative;
+  }
+  .update {
+    height: 3.2rem;
+    background-color: rgb(233, 230, 230);
+  }
+
+  .nav-item {
+    color: black;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.349);
+  }
+
+  .nav-item:first-child {
+    margin-top: 0.2rem;
+    border-top: none;
+  }
+  .anchor-item:visited,
+  .anchor-item:link {
+    color: rgb(224, 221, 221);
+    position: relative;
+    top: 11px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .update-link:visited,
+  .update-link:link {
+    color: black;
+  }
+  .show {
+    transform: translate3d(0, 0, 0);
   }
 
   .line {
@@ -285,7 +344,7 @@ a:hover {
   }
 
   .staff {
-    margin-top: rem;
+    margin-top: 2rem;
   }
 
   .about-p {
@@ -295,5 +354,15 @@ a:hover {
   }
   .row {
     display: none;
+  }
+  .dim {
+    position: absolute;
+    top: 4.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.568);
+    z-index: 100000;
   }
 }
