@@ -3,6 +3,7 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".mobile-links");
 const details = document.querySelector(".details");
 const navItems = document.querySelectorAll(".nav-item");
+const messageInfo = document.querySelector(".message");
 
 let showMenu = false;
 
@@ -17,6 +18,7 @@ function toggleMenu() {
     menuNav.classList.add("show");
     menuBtn.classList.add("show");
     details.classList.add("hide");
+    messageInfo.classList.add("grey");
     navItems.forEach((item) => item.classList.add("show"));
     showMenu = true;
   } else {
@@ -25,6 +27,7 @@ function toggleMenu() {
     menuNav.classList.remove("show");
     menuBtn.classList.remove("show");
     details.classList.remove("hide");
+    messageInfo.classList.remove("grey");
     navItems.forEach((item) => item.classList.remove("show"));
     showMenu = false;
   }
