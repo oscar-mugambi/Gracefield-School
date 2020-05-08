@@ -304,7 +304,8 @@ a:hover {
   }
 
   .nav-item {
-    height: 70px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-top: 2px solid rgba(255, 255, 255, 0.349);
     width: 100%;
   }
@@ -317,7 +318,6 @@ a:hover {
   .anchor-item:link {
     color: rgb(224, 221, 221);
     position: relative;
-    top: 24px;
     margin-left: 1rem;
     text-transform: uppercase;
     font-size: 14px;
