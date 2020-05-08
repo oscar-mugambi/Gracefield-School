@@ -362,6 +362,9 @@ li img {
   10% {
     opacity: 0.2;
   }
+  99% {
+    opacity: 0.9;
+  }
 
   to {
     opacity: 1;
