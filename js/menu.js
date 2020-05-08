@@ -4,10 +4,12 @@ const menuNav = document.querySelector(".mobile-links");
 const details = document.querySelector(".details");
 const navItems = document.querySelectorAll(".nav-item");
 const messageInfo = document.querySelector(".message");
+const ghost = document.querySelector(".ghost");
 
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
+
 menuBtn.addEventListener("click", console.log("clicked"));
 
 function toggleMenu() {
