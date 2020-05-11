@@ -324,8 +324,8 @@ a:hover {
     padding: 5px;
     top: 16px;
     margin-right: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.575);
-    background-color: rgb(26, 56, 153);
+    /* border: 1px solid rgba(0, 0, 0, 0.575);
+    background-color: rgb(26, 56, 153); */
     transition: all 0.4s ease-in;
   }
 

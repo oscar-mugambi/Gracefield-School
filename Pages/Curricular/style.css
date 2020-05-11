@@ -262,8 +262,8 @@ li img {
     padding: 5px;
     top: 16px;
     margin-right: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.575);
-    background-color: rgb(26, 56, 153);
+    /* border: 1px solid rgba(0, 0, 0, 0.575);
+    background-color: rgb(26, 56, 153); */
     transition: all 0.4s ease-in;
   }
 
@@ -300,16 +300,24 @@ li img {
   .overlay {
     position: relative;
     display: flex;
-    top: 2rem;
+    top: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    height: 100rem;
+    height: 120vh;
     justify-content: center;
   }
 
   .text {
     width: 95%;
     font-size: 14px;
+  }
+
+  .list {
+    width: 94%;
+  }
+
+  .container {
+    height: 130vh;
   }
 }
 
