@@ -250,6 +250,15 @@ input:focus ~ .label {
     display: none;
   }
 
+  h3 {
+    margin-top: 1.5rem;
+  }
+
+  .contact-us {
+    height: 100vh;
+    margin-top: 0;
+  }
+
   .responsive-nav {
     display: flex;
     background-color: rgb(32, 68, 185);
@@ -415,6 +424,7 @@ input:focus ~ .label {
 @media (max-width: 1000px) {
   .adjacent {
     font-size: 14px;
+    padding-left: 2rem;
   }
 }
 
