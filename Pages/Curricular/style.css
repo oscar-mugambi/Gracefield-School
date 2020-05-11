@@ -155,6 +155,7 @@ li img {
     display: flex;
     background-color: rgb(32, 68, 185);
     height: 4.5rem;
+    /* position: sticky; */
   }
   .responsive-logo {
     display: flex;
