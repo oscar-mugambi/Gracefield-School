@@ -1,3 +1,4 @@
+const body = document.querySelector(".body");
 const menuBtn = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".mobile-links");
@@ -9,8 +10,6 @@ const ghost = document.querySelector(".ghost");
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
-
-menuBtn.addEventListener("click", console.log("clicked"));
 
 function toggleMenu() {
   console.log("clicked");

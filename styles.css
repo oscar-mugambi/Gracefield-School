@@ -16,7 +16,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  overflow: hidden;
 }
 
 nav {
@@ -25,7 +24,7 @@ nav {
   width: 100%;
   background: transparent;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: center; */
 }
 
 .responsive-nav {
@@ -46,13 +45,17 @@ nav {
 }
 
 .nav__links {
+  position: relative;
   margin-left: 4rem;
 }
 .nav__links2 {
-  margin-right: 4rem;
+  position: relative;
+  left: 16rem;
 }
 
 .logo {
+  position: relative;
+  left: 50%;
   height: 6rem;
 }
 
@@ -113,25 +116,26 @@ a:hover {
   display: flex;
   flex-direction: column;
   right: 0;
-  max-width: 40rem;
-  margin-top: 6rem;
+  max-width: 50rem;
+  margin-top: 4rem;
   margin-left: 4rem;
 }
 .message-short {
   color: white;
   font-family: "myFirstFont";
-  font-size: 4rem;
+  font-size: 4.1rem;
+  letter-spacing: 2px;
   color: #137cf3f6;
 }
 
 .message-long {
   display: block;
   font-family: "Montserrat";
-  font-size: 1.1rem;
-  padding-top: 1.5rem;
+  font-size: 1rem;
+  padding-top: 1rem;
   color: white;
-  width: 80%;
-  line-height: 1.9rem;
+  width: 75%;
+  line-height: 1.8rem;
   letter-spacing: 0.7px;
 }
 
@@ -160,6 +164,10 @@ a:hover {
 .ghost:link,
 .ghost:visited {
   border: 1.5px solid #c6ee16;
+}
+
+.ghost:hover {
+  background-color: #484943;
 }
 
 .text {
@@ -244,6 +252,10 @@ a:hover {
   .active-responsive {
     background-color: rgba(24, 24, 24, 0.493);
   }
+  /* .hamburger-container {
+    position: absolute;
+    background-color: black;
+  } */
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -253,8 +265,8 @@ a:hover {
     padding: 5px;
     top: 16px;
     margin-right: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.575);
-    background-color: rgb(26, 56, 153);
+    /* border: 1px solid rgba(0, 0, 0, 0.575); */
+    /* background-color: rgb(26, 56, 153); */
   }
   .nav__links,
   .nav__links2 {
@@ -263,6 +275,11 @@ a:hover {
 
   .message {
     margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    max-width: 40rem;
+    margin-top: 6rem;
   }
   .message-short {
     font-size: 3rem;
@@ -290,8 +307,6 @@ a:hover {
     flex-flow: column wrap;
     align-items: flex-start;
     height: 100vh;
-    /* transform: translate3d(0%, -120%, 0); */
-
     transition: all 0.6s ease-out;
     background-color: rgb(35, 74, 202);
     z-index: 100000;
