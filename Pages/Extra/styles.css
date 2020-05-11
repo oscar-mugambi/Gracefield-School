@@ -421,8 +421,16 @@ a:hover {
     top: -21px;
   }
 }
-
-@media (max-width: 500px) {
+@media (max-width: 997px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .activity-container {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
   .activity-container {
     width: 100%;
   }
@@ -430,7 +438,8 @@ a:hover {
     background-color: rgba(24, 24, 24, 0.493);
   }
 }
-@media (max-width: 600px) {
+
+@media (max-width: 500px) {
   .activity-container {
     width: 100%;
   }
