@@ -222,12 +222,6 @@ a:hover {
     visibility: visible;
   }
 
-  /* .column-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    width: 100vw;
-    z-index: 10000;
-  } */
   .column-bar {
     display: flex;
     justify-content: flex-end;
@@ -356,8 +350,10 @@ a:hover {
 
   .about-p {
     width: 100%;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
   }
   .row {
     display: none;

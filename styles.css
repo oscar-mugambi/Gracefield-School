@@ -157,7 +157,8 @@ a:hover {
 
 .full:link,
 .full:visited {
-  background-color: rgb(35, 74, 202);
+  /* background-color: rgb(35, 74, 202); */
+  background-color: #a52a2a;
   color: whitesmoke;
 }
 
@@ -191,7 +192,8 @@ a:hover {
   }
   .responsive-nav {
     display: flex;
-    background-color: rgb(32, 68, 185);
+
+    background-color: #a52a2a;
     height: 4.5rem;
   }
   .responsive-logo {
@@ -284,6 +286,7 @@ a:hover {
   .message-short {
     font-size: 3rem;
     margin-top: -5rem;
+    color: #a52a2a;
   }
 
   .message-long {
@@ -308,7 +311,8 @@ a:hover {
     align-items: flex-start;
     height: 100vh;
     transition: all 0.6s ease-out;
-    background-color: rgb(35, 74, 202);
+    /* background-color: rgb(35, 74, 202); */
+    background-color: #a52a2a;
     z-index: 100000;
     display: none;
     position: relative;
@@ -366,7 +370,7 @@ a:hover {
     transition: all 0.4s ease-in;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 435px) {
   .mobile-head {
     font-size: 16px;
   }
@@ -389,8 +393,7 @@ a:hover {
     font-size: 10px;
   }
   .message-short {
-    font-size: 41px;
-    width: 95%;
+    font-size: 39px;
   }
   .message-long {
     font-size: 16px;
@@ -432,6 +435,11 @@ a:hover {
     text-decoration: none;
     border-radius: 200px;
     color: white;
+  }
+}
+@media (max-width: 332px) {
+  .message-short {
+    font-size: 32px;
   }
 }
 
