@@ -184,17 +184,14 @@ a:hover {
 }
 
 @media (max-width: 1000px) {
-  /* .container {
-    transform: scaleX(-1);
-    position: absolute;
-    top: 0;
-    bottom: 0rem;
-    right: 0;
-    left: 0;
-    height: 100vh;
-    z-index: -99;
-  } */
-
+  .container {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.561),
+        rgba(0, 0, 0, 0.876)
+      ),
+      url(img/backgrounds/study2.jpg);
+  }
   .location-map {
     position: relative;
   }
@@ -293,8 +290,10 @@ a:hover {
     right: 0;
     max-width: 40rem;
     margin-top: 6rem;
+    z-index: 100000;
   }
   .message-short {
+    font-weight: 500;
     font-size: 3rem;
     margin-top: -5rem;
     color: #a52a2a;
