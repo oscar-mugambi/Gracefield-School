@@ -184,6 +184,17 @@ a:hover {
 }
 
 @media (max-width: 1000px) {
+  /* .container {
+    transform: scaleX(-1);
+    position: absolute;
+    top: 0;
+    bottom: 0rem;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    z-index: -99;
+  } */
+
   .location-map {
     position: relative;
   }

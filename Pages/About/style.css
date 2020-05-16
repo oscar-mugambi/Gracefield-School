@@ -142,7 +142,7 @@ a:hover {
 
 .about-p span {
   width: 100%;
-  color: #137cf3f6;
+  color: #a52a2a;
   font: 1.5rem;
   font-weight: bold;
 }
@@ -205,7 +205,8 @@ a:hover {
   }
   .responsive-nav {
     display: flex;
-    background-color: rgb(32, 68, 185);
+    /* background-color: rgb(32, 68, 185); */
+    background-color: #a52a2a;
     height: 4.5rem;
   }
   .responsive-logo {
@@ -237,7 +238,8 @@ a:hover {
     height: 100vh;
     /* transform: translate3d(150%, 0%, 0); */
     transition: all 0.6s ease-out;
-    background-color: rgb(35, 74, 202);
+    /* background-color: rgb(35, 74, 202); */
+    background-color: #a52a2a;
     z-index: 100000;
     display: none;
     position: relative;
@@ -341,6 +343,7 @@ a:hover {
 
   .mission,
   .staff {
+    color: #a52a2a;
     font-size: 20px;
   }
 
@@ -373,7 +376,7 @@ a:hover {
   }
 
   .container {
-    bottom: -50rem;
+    bottom: -10rem;
   }
 }
 @media (max-width: 430px) {
@@ -394,12 +397,28 @@ a:hover {
   }
 }
 
+@media (max-width: 375px) {
+  .container {
+    bottom: -15rem;
+  }
+}
 @media (max-width: 350px) {
   .mobile-head {
     font-size: 14px;
   }
   .mobile-head-footer {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 330px) {
+  .container {
+    bottom: -20rem;
+  }
+}
+@media (max-width: 295px) {
+  .container {
+    bottom: -25rem;
   }
 }
 

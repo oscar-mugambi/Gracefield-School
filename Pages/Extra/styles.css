@@ -214,7 +214,7 @@ a:hover {
 
   .responsive-nav {
     display: flex;
-    background-color: rgb(32, 68, 185);
+    background-color: #a52a2a;
     height: 4.5rem;
   }
   .responsive-logo {
@@ -252,7 +252,7 @@ a:hover {
     height: 100vh;
     /* transform: translate3d(150%, 0%, 0); */
     transition: all 0.6s ease-out;
-    background-color: rgb(35, 74, 202);
+    background-color: #a52a2a;
     z-index: 100000;
     display: none;
     position: relative;

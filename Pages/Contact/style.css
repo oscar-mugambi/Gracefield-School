@@ -104,7 +104,7 @@ button:hover {
 }
 
 h3 {
-  color: #137cf3f6;
+  color: #a52a2a;
   font-size: 1.7rem;
   font-family: "Lato";
 }
@@ -223,7 +223,7 @@ input:focus ~ .label {
 
 .information,
 .information:visited {
-  color: #137cf3f6;
+  color: #a52a2a;
 }
 
 .icon-contact {
@@ -261,7 +261,7 @@ input:focus ~ .label {
 
   .responsive-nav {
     display: flex;
-    background-color: rgb(32, 68, 185);
+    background-color: #a52a2a;
     height: 4.5rem;
   }
   .responsive-logo {
@@ -296,7 +296,7 @@ input:focus ~ .label {
     /* transform: translate3d(150%, 0%, 0); */
 
     transition: all 0.6s ease-out;
-    background-color: rgb(35, 74, 202);
+    background-color: #a52a2a;
     z-index: 100000;
     display: none;
     position: relative;
