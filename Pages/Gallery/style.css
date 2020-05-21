@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -401,6 +401,11 @@ button:hover {
     margin-top: 0rem;
     border-top: none;
   }
+  .nav-item:last-child {
+    margin-top: 0rem;
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.349);
+  }
   .anchor-item:visited,
   .anchor-item:link {
     color: rgb(224, 221, 221);
@@ -575,9 +580,11 @@ button:hover {
 .focus li a:visited,
 .focus li a:link {
   color: black;
+  font-weight: 700;
 }
 
 .activities .focus-a:visited,
 .activities .focus-a:link {
   color: black;
+  font-weight: 600;
 }
