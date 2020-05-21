@@ -84,7 +84,7 @@ a:hover {
 .container {
   position: absolute;
   top: 0rem;
-  bottom: 0rem;
+  bottom: -20rem;
   left: 0rem;
   right: 0;
   background-image: linear-gradient(
@@ -296,7 +296,7 @@ a:hover {
     position: relative;
     top: -14px;
     right: 0;
-    width: 20%;
+
     opacity: 1;
     visibility: visible;
     z-index: 100000;
@@ -379,6 +379,12 @@ a:hover {
     bottom: -14rem;
   }
 }
+
+@media (max-width: 560px) {
+  .container {
+    bottom: -35rem;
+  }
+}
 @media (max-width: 430px) {
   .mobile-head {
     font-size: 16px;
@@ -397,9 +403,9 @@ a:hover {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 384px) {
   .container {
-    bottom: -20rem;
+    bottom: -45rem;
   }
 }
 @media (max-width: 350px) {
@@ -409,16 +415,19 @@ a:hover {
   .mobile-head-footer {
     font-size: 10px;
   }
+  .container {
+    bottom: -55rem;
+  }
 }
 
 @media (max-width: 330px) {
   .container {
-    bottom: -28rem;
+    bottom: -65rem;
   }
 }
 @media (max-width: 295px) {
   .container {
-    bottom: -25rem;
+    bottom: -70rem;
   }
 }
 

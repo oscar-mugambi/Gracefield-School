@@ -1,3 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="menu.js"></script> 
+    
+    <title>Gracefield Schools - Above & Beyond</title>
+  </head>
+  <body>
+    
+    <nav class="responsive-nav">
+      <div class="responsive-logo">
+        <img class="responsive-logo" src="../../logo.png" alt="" />
+      </div>
+      <div class="responsive-title">
+        <p class="mobile-head">Gracefield Schools</p>
+        <br />
+        <p class="mobile-head-footer">Above and & Beyond</p>
+      </div>
+      <div class="menu">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+    </nav>
+    <div class="column">
+      <ul class="mobile-links">
+        <li onclick="location.href='../../index.html'" class="nav-item"><a class="anchor-item" href="../../index.html">Home</a></li>
+        <li onclick="location.href='../About/About.html'" class="nav-item"><a class="anchor-item" href="../About/About.html">About Us</a></li>
+        <li onclick="location.href='../Extra/extra.html'" class="nav-item">
+          <a class="anchor-item"  href="../Extra/extra.html">Extra Curricular</a>
+        </li>
+        <li onclick="location.href='..Contact/Contact.html'" class="nav-item"><a class="anchor-item" href="../Contact/Contact.html">Contact</a></li>
+        <li onclick="location.href='./Pages/Curricular/curricular.html'" class="nav-item">
+          <a class="anchor-item" href="../Curricular/curricular.html">Curriculum</a>
+        </li>
+        <li onclick="location.href='../Gallery/Gallery.html'" class="nav-item active-responsive">
+          <a class="anchor-item" href="../Gallery/Gallery.html"
+            >Gallery</a
+          >
+        </li>
+        <li class="nav-item update">
+          <a class="anchor-item update-link" href="">COVID-19 Updates</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <input type="radio" id="i1" name="images" checked />
+      <input type="radio" id="i2" name="images" />
+      <input type="radio" id="i3" name="images" />
+      <input type="radio" id="i4" name="images" />
+      <input type="radio" id="i5" name="images" />
+
+      <div class="slide_img" id="one">
+       <img src="../../img/gallery/dance.jpg" alt="">
+        
+
+        <label class="prev" for="i5"><span>&#x2039;</span></label>
+        <label class="next" for="i2"><span>&#x203a;</span></label>
+      </div>
+
+      <div class="slide_img" id="two">
+        <img src="../../img/gallery/dance2.jpg" alt="">
+        <label class="prev" for="i1"><span>&#x2039;</span></label>
+        <label class="next" for="i3"><span>&#x203a;</span></label>
+      </div>
+
+      <div class="slide_img" id="three">
+        <img src="../../img/gallery/dance3.jpg" alt="">
+
+        <label class="prev" for="i2"><span>&#x2039;</span></label>
+        <label class="next" for="i4"><span>&#x203a;</span></label>
+      </div>
+
+      <div class="slide_img" id="four">
+        <img src="../../img/gallery/dance.jpg" alt="">
+
+        <label class="prev" for="i3"><span>&#x2039;</span></label>
+        <label class="next" for="i5"><span>&#x203a;</span></label>
+      </div>
+
+      <div class="slide_img" id="five">
+        <img src="../../img/gallery/dance2.jpg" alt="">
+
+        <label class="prev" for="i4"><span>&#x2039;</span></label>
+        <label class="next" for="i1"><span>&#x203a;</span></label>
+      </div>
+
+      <div id="nav_slide">
+        <label for="i1" class="dots" id="dot1"></label>
+        <label for="i2" class="dots" id="dot2"></label>
+        <label for="i3" class="dots" id="dot3"></label>
+        <label for="i4" class="dots" id="dot4"></label>
+        <label for="i5" class="dots" id="dot5"></label>
+      </div>
+    </div>
+    <div class="galleries">
+   <span class="gallery-span"> Check out our other galleries </span>
+    <ul class="activities">
+      <li onclick="location.href='../Gallery/classwork.html'" class="nav-item active-responsive"> <a href="classwork.html"> In The Classroom</a></li>
+      <li onclick="location.href='../Gallery/play.html'" class="nav-item active-responsive "> <a href="play.html"> In The Playground</a></li>
+      <li onclick="location.href='../Gallery/dance.html'" class="nav-item active-responsive focus"> <a class="focus-a" href="dance.html"> On The Dancefloor</a></li>
+    </ul>
+  </div>
+  </body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- <!DOCTYPE html>
 <html lang="en">
   <head>
