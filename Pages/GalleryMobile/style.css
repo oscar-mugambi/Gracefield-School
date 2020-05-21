@@ -550,3 +550,22 @@ label span {
   margin-bottom: 0.5rem;
   color: white;
 }
+
+.activities a:visited,
+.activities a:link {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.focus {
+  background-color: rgb(202, 202, 202);
+}
+
+.focus li a:visited,
+.focus li a:link {
+  color: black;
+}
+
+.activities .focus-a:visited,
+.activities .focus-a:link {
+  color: black;
+}
