@@ -414,6 +414,10 @@ button:hover {
   .update-link:link {
     color: black;
   }
+
+  .update {
+    background-color: white;
+  }
   .show {
     /* transform: translate3d(0, 0, 0); */
     display: flex;

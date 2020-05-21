@@ -3,6 +3,7 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".mobile-links");
 const shade = document.querySelector(".shade");
 const container = document.querySelector(".container");
+const galleries = document.querySelector(".galleries");
 const navItems = document.querySelectorAll(".nav-item");
 const carousel = document.querySelector(".carousel");
 const imageResponsive = document.querySelector(".image-responsive");
@@ -19,6 +20,7 @@ function toggleMenu() {
     menu.classList.add("show");
     menuNav.classList.add("show");
     menuBtn.classList.add("show");
+    galleries.style.display = "none";
     container.style.zIndex = -100;
     navItems.forEach((item) => item.classList.add("show"));
     showMenu = true;
@@ -26,6 +28,7 @@ function toggleMenu() {
     menuBtn.classList.remove("close");
     container.style.zIndex = 100;
     menu.classList.remove("show");
+    galleries.style.display = "";
     menuNav.classList.remove("show");
     menuBtn.classList.remove("show");
     navItems.forEach((item) => item.classList.remove("show"));
