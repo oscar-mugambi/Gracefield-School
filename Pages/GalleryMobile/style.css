@@ -422,7 +422,7 @@ button:hover {
   height: inherit;
   position: absolute;
   top: 0;
-  background-color: rgba(88, 88, 88, 0.2);
+  background-color: rgba(27, 27, 27, 0.3);
   color: rgba(244, 244, 244, 0.9);
   z-index: 99;
   transition: 0.45s;
@@ -489,7 +489,7 @@ label span {
 #i4:checked ~ #four,
 #i5:checked ~ #five {
   z-index: 9;
-  animation: scroll 1s ease-in-out;
+  animation: scroll 0.8s ease-in-out;
 }
 
 #i1:checked ~ #nav_slide #dot1,
