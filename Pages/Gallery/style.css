@@ -145,6 +145,9 @@ label span {
 .responsive-nav {
   display: none;
 }
+.galleries {
+  display: none;
+}
 
 .mobile-head {
   display: none;
@@ -273,6 +276,11 @@ button:hover {
 }
 
 @media (max-width: 1000px) {
+  .galleries {
+    margin-top: 3rem;
+    color: white;
+    text-align: center;
+  }
   .responsive {
     display: block;
   }
@@ -553,12 +561,6 @@ button:hover {
   .me {
     display: none;
   }
-}
-
-.galleries {
-  margin-top: 3rem;
-  color: white;
-  text-align: center;
 }
 
 .gallery-span {

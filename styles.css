@@ -447,16 +447,20 @@ a:hover {
     color: white;
   }
 }
-@media (max-width: 332px) {
+@media (max-width: 333px) {
   .message-short {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 
 @media (max-width: 321px) {
   .message-long {
     line-height: 25px;
-    width: 98%;
+    width: 99%;
+  }
+
+  .message-short {
+    font-size: 30px;
   }
 }
 
