@@ -278,9 +278,11 @@ button:hover {
 
 @media (max-width: 1000px) {
   .galleries {
+    display: block;
     margin-top: 3rem;
     color: white;
     text-align: center;
+    font-size: 1.1rem;
   }
   .responsive {
     display: block;
@@ -360,7 +362,7 @@ button:hover {
     color: rgb(219, 219, 22);
   }
   .active-responsive {
-    background-color: rgba(24, 24, 24, 0.493);
+    background-color: rgba(2, 2, 2, 0.589);
   }
   /* .hamburger-container {
     position: absolute;

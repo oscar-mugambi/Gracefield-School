@@ -308,7 +308,7 @@ a:hover {
     align-items: flex-end;
     position: relative;
     padding: 5px;
-    top: 8px;
+    top: 4px;
     margin-right: 5px;
     /* border: 1px solid rgba(0, 0, 0, 0.575);
     background-color: rgb(26, 56, 153); */
@@ -372,7 +372,7 @@ a:hover {
     z-index: 100000;
   }
   .active-responsive {
-    background-color: rgba(24, 24, 24, 0.493);
+    background-color: rgba(2, 2, 2, 0.589);
   }
 
   .container {

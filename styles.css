@@ -207,6 +207,17 @@ a:hover {
     background-color: rgb(233, 233, 233);
   }
 
+  .dark {
+    position: absolute;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.623);
+    transition: 0.2s ease-in;
+    z-index: 1000;
+  }
+
   .footer-info {
     display: block;
     background-color: #333333;
@@ -234,7 +245,7 @@ a:hover {
     display: inline-block;
     position: relative;
     background: #d8d8d8;
-    padding: 1.5rem;
+    padding: 2.5rem;
     width: 100%;
   }
 
@@ -244,7 +255,7 @@ a:hover {
 
   .mobile p {
     position: relative;
-    font-size: 16px;
+    font-size: 17px;
     letter-spacing: 0.5px;
     padding-top: 0;
     text-align: center;
@@ -395,12 +406,9 @@ a:hover {
     color: rgb(219, 219, 22);
   }
   .active-responsive {
-    background-color: rgba(24, 24, 24, 0.493);
+    background-color: rgba(2, 2, 2, 0.589);
   }
-  /* .hamburger-container {
-    position: absolute;
-    background-color: black;
-  } */
+
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -410,8 +418,6 @@ a:hover {
     padding: 5px;
     top: 8px;
     margin-right: 5px;
-    /* border: 1px solid rgba(0, 0, 0, 0.575); */
-    /* background-color: rgb(26, 56, 153); */
   }
   .nav__links,
   .nav__links2 {

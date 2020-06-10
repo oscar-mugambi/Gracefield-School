@@ -387,7 +387,7 @@ a:hover {
     margin-left: 0;
   }
   .active-responsive {
-    background-color: rgba(24, 24, 24, 0.493);
+    background-color: rgba(2, 2, 2, 0.589);
   }
   .sub-text {
     position: relative;
@@ -434,17 +434,11 @@ a:hover {
   .activity-container {
     width: 100%;
   }
-  .active-responsive {
-    background-color: rgba(24, 24, 24, 0.493);
-  }
 }
 
 @media (max-width: 500px) {
   .activity-container {
     width: 100%;
-  }
-  .active-responsive {
-    background-color: rgba(24, 24, 24, 0.493);
   }
 }
 

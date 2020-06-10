@@ -215,9 +215,8 @@ button:hover {
     color: rgb(219, 219, 22);
   }
   .active-responsive {
-    background-color: rgba(24, 24, 24, 0.493);
+    background-color: rgba(2, 2, 2, 0.589);
   }
-
   .hamburger {
     display: flex;
     flex-direction: column;

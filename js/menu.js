@@ -6,6 +6,7 @@ const details = document.querySelector(".details");
 const navItems = document.querySelectorAll(".nav-item");
 const messageInfo = document.querySelector(".message");
 const ghost = document.querySelector(".ghost");
+const darken = document.querySelector(".darken");
 
 let showMenu = false;
 
@@ -20,6 +21,7 @@ function toggleMenu() {
     menuBtn.classList.add("show");
     details.classList.add("hide");
     messageInfo.classList.add("grey");
+    darken.classList.add("dark");
     navItems.forEach((item) => item.classList.add("show"));
     showMenu = true;
   } else {
@@ -28,6 +30,7 @@ function toggleMenu() {
     menuNav.classList.remove("show");
     menuBtn.classList.remove("show");
     details.classList.remove("hide");
+    darken.classList.remove("dark");
     messageInfo.classList.remove("grey");
     navItems.forEach((item) => item.classList.remove("show"));
     showMenu = false;
