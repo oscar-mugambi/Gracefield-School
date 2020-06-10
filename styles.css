@@ -14,6 +14,10 @@
   font-family: myFirstFont;
   src: url(./Cabin_Sketch/CabinSketch-Regular.ttf);
 }
+@font-face {
+  font-family: gothic;
+  src: url(./league-gothic-master/league-gothic-master/LeagueGothic-Regular.otf);
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -442,6 +446,7 @@ a:hover {
 
   .message-long {
     font-size: 1rem;
+
     font-family: "Roboto Condensed", sans-serif;
     width: 100%;
     color: rgb(0, 0, 0);
@@ -524,6 +529,10 @@ a:hover {
     transform: rotate(-45deg) translate(4px, -8px);
     transition: all 0.4s ease-in;
   }
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
 }
 @media (max-width: 435px) {
   .mobile-head {
