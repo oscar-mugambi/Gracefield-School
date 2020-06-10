@@ -210,7 +210,7 @@ a:hover {
   .footer-info {
     display: block;
     background-color: #333333;
-    padding: 0.5rem 2rem;
+    padding: 48px 2rem;
     color: rgb(255, 255, 255, 0.6);
     text-align: center;
   }
@@ -218,7 +218,8 @@ a:hover {
   .footer-title {
     padding-top: 1rem;
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 28px;
+    letter-spacing: 0.6px;
     font-weight: 700;
     color: white;
   }
@@ -226,6 +227,7 @@ a:hover {
   .footer-line {
     position: relative;
     margin-top: -5px;
+    font-size: 18px;
   }
 
   .mobile {
@@ -242,7 +244,8 @@ a:hover {
 
   .mobile p {
     position: relative;
-    font-size: 14px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
     padding-top: 0;
     text-align: center;
   }
@@ -445,8 +448,8 @@ a:hover {
   }
 
   .message-long {
-    font-size: 1rem;
-
+    font-size: 18px;
+    letter-spacing: 0.5px;
     font-family: "Roboto Condensed", sans-serif;
     width: 100%;
     color: rgb(0, 0, 0);
@@ -533,6 +536,7 @@ a:hover {
 
 * {
   font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 0.5px;
 }
 @media (max-width: 435px) {
   .mobile-head {
@@ -543,9 +547,6 @@ a:hover {
   }
   .message-short {
     font-size: 43px;
-  }
-  .message-long {
-    font-size: 16px;
   }
 }
 
@@ -560,7 +561,6 @@ a:hover {
     font-size: 36px;
   }
   .message-long {
-    font-size: 16px;
     width: 100%;
   }
 }
