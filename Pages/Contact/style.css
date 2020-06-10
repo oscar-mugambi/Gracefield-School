@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -106,7 +107,8 @@ button:hover {
 h3 {
   color: #a52a2a;
   font-size: 1.7rem;
-  font-family: "Lato";
+  /* font-family: "Lato"; */
+  font-family: "Roboto Condensed";
 }
 
 .contact-us {
@@ -224,6 +226,8 @@ input:focus ~ .label {
 .information,
 .information:visited {
   color: #a52a2a;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .icon-contact {
@@ -262,7 +266,7 @@ input:focus ~ .label {
   .responsive-nav {
     display: flex;
     background-color: #a52a2a;
-    height: 4.5rem;
+    height: 55px;
   }
   .responsive-logo {
     display: flex;
@@ -271,7 +275,7 @@ input:focus ~ .label {
     margin-left: 0.8rem;
     height: 3rem;
     position: relative;
-    top: -2px;
+    top: -6px;
   }
 
   .show {
@@ -365,7 +369,7 @@ input:focus ~ .label {
     align-items: flex-end;
     position: relative;
     padding: 5px;
-    top: 16px;
+    top: 5px;
     margin-right: 5px;
     /* border: 1px solid rgba(0, 0, 0, 0.575);
     background-color: rgb(26, 56, 153); */
@@ -389,13 +393,13 @@ input:focus ~ .label {
     position: relative;
     display: inline-block;
     font-size: 18px;
-    top: -5px;
+    top: -10px;
   }
   .mobile-head-footer {
     position: relative;
     display: inline-block;
     font-size: 13px;
-    top: -10px;
+    top: -17px;
     color: rgb(219, 219, 22);
   }
   .active-responsive {
@@ -483,4 +487,9 @@ input:focus ~ .label {
   to {
     opacity: 1;
   }
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 0.5px;
 }

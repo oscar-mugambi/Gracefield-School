@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -215,7 +216,7 @@ a:hover {
   .responsive-nav {
     display: flex;
     background-color: #a52a2a;
-    height: 4.5rem;
+    height: 55px;
   }
   .responsive-logo {
     display: flex;
@@ -227,7 +228,7 @@ a:hover {
     display: inline-block;
     height: 3rem;
     position: relative;
-    top: -2px;
+    top: -6px;
   }
 
   .show {
@@ -321,7 +322,7 @@ a:hover {
     align-items: flex-end;
     position: relative;
     padding: 5px;
-    top: 16px;
+    top: 5px;
     margin-right: 5px;
     /* border: 1px solid rgba(0, 0, 0, 0.575);
     background-color: rgb(26, 56, 153); */
@@ -345,13 +346,13 @@ a:hover {
     position: relative;
     display: inline-block;
     font-size: 18px;
-    top: -6px;
+    top: -11px;
   }
   .mobile-head-footer {
     position: relative;
     display: inline-block;
     font-size: 13px;
-    top: -12px;
+    top: -17px;
     color: rgb(219, 219, 22);
   }
   .container {
@@ -509,4 +510,9 @@ a:hover {
   to {
     opacity: 1;
   }
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 0.5px;
 }

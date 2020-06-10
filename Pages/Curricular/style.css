@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cabin+Sketch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 
 * {
   padding: 0;
@@ -114,7 +115,7 @@ a:hover {
   position: absolute;
   width: 75%;
   margin: auto;
-  font-family: sans-serif;
+  padding: 0 1rem;
   letter-spacing: 1px;
   line-height: 2.3rem;
   top: 2rem;
@@ -154,7 +155,7 @@ li img {
   .responsive-nav {
     display: flex;
     background-color: #a52a2a;
-    height: 4.5rem;
+    height: 55px;
     /* position: sticky; */
   }
   .responsive-logo {
@@ -167,7 +168,7 @@ li img {
     display: inline-block;
     height: 3rem;
     position: relative;
-    top: -2px;
+    top: -6px;
   }
 
   .show {
@@ -260,7 +261,7 @@ li img {
     align-items: flex-end;
     position: relative;
     padding: 5px;
-    top: 16px;
+    top: 7px;
     margin-right: 5px;
     /* border: 1px solid rgba(0, 0, 0, 0.575);
     background-color: rgb(26, 56, 153); */
@@ -284,13 +285,13 @@ li img {
     position: relative;
     display: inline-block;
     font-size: 18px;
-    top: -5px;
+    top: -12px;
   }
   .mobile-head-footer {
     position: relative;
     display: inline-block;
     font-size: 13px;
-    top: -10px;
+    top: -17px;
     color: rgb(219, 219, 22);
   }
   .active-responsive {
@@ -377,4 +378,9 @@ li img {
   to {
     opacity: 1;
   }
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 0.5px;
 }

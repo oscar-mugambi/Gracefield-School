@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -155,7 +156,7 @@ button:hover {
     display: flex;
 
     background-color: #a52a2a;
-    height: 4.5rem;
+    height: 55px;
   }
 
   .responsive-logo {
@@ -165,7 +166,7 @@ button:hover {
     margin-left: 0.8rem;
     height: 3rem;
     position: relative;
-    top: 6px;
+    top: 2px;
   }
 
   .line {
@@ -204,13 +205,13 @@ button:hover {
     position: relative;
     display: inline-block;
     font-size: 18px;
-    top: 8px;
+    top: -1px;
   }
   .mobile-head-footer {
     position: relative;
     display: inline-block;
     font-size: 13px;
-    top: 2px;
+    top: -6px;
     color: rgb(219, 219, 22);
   }
   .active-responsive {
@@ -224,7 +225,7 @@ button:hover {
     position: relative;
     transition: all 0.4s ease-in;
     padding: 5px;
-    top: 16px;
+    top: 7px;
     margin-right: 5px;
   }
 
@@ -573,4 +574,9 @@ label span {
 .activities .focus-a:visited,
 .activities .focus-a:link {
   color: black;
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 0.5px;
 }
