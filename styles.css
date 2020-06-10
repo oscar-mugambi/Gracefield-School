@@ -218,7 +218,7 @@ a:hover {
   .footer-title {
     padding-top: 1rem;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 26px;
     letter-spacing: 0.6px;
     font-weight: 700;
     color: white;
@@ -244,7 +244,7 @@ a:hover {
 
   .mobile p {
     position: relative;
-    font-size: 17px;
+    font-size: 16px;
     letter-spacing: 0.5px;
     padding-top: 0;
     text-align: center;
@@ -279,7 +279,7 @@ a:hover {
   }
   .covid {
     margin: auto;
-    padding: 3rem 0;
+    padding: 3rem 0 4rem;
     background-color: #cfcfcf;
   }
 
@@ -312,7 +312,6 @@ a:hover {
   .ghost:visited {
     color: #a52a2a;
     font-weight: 500;
-    font-size: 1.1rem;
   }
 
   .container-original {
@@ -443,7 +442,7 @@ a:hover {
     position: relative;
     text-align: center;
     width: 100%;
-    margin-bottom: -1rem;
+    margin-bottom: 0;
     padding: 1rem 0.5rem;
   }
 
@@ -539,9 +538,6 @@ a:hover {
   letter-spacing: 0.5px;
 }
 @media (max-width: 435px) {
-  .mobile-head {
-    font-size: 16px;
-  }
   .mobile-head-footer {
     font-size: 11px;
   }
@@ -551,9 +547,6 @@ a:hover {
 }
 
 @media (max-width: 400px) {
-  .mobile-head {
-    font-size: 14px;
-  }
   .mobile-head-footer {
     font-size: 10px;
   }
@@ -578,9 +571,7 @@ a:hover {
     width: 100%;
     margin-top: -5rem;
   }
-  .mobile-head {
-    font-size: 14px;
-  }
+
   .mobile-head-footer {
     font-size: 10px;
   }
@@ -603,6 +594,14 @@ a:hover {
 @media (max-width: 333px) {
   .message-short {
     font-size: 30px;
+  }
+
+  .mobile-head {
+    font-size: 14px;
+  }
+
+  .mobile-center .mobile-info-details {
+    font-size: 14px;
   }
 }
 
@@ -792,4 +791,12 @@ a:hover {
 
 .gallery-span {
   text-transform: uppercase;
+}
+
+.icon {
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: rgb(255, 255, 255, 0.6);
+  border: 2px solid;
+  border-radius: 50%;
 }
