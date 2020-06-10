@@ -5,7 +5,7 @@ const shade = document.querySelector(".shade");
 const container = document.querySelector(".container");
 const galleries = document.querySelector(".galleries");
 const navItems = document.querySelectorAll(".nav-item");
-const carousel = document.querySelector(".carousel");
+// const carousel = document.querySelector(".carousel");
 const imageResponsive = document.querySelector(".image-responsive");
 
 let showMenu = false;
@@ -35,8 +35,3 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-
-// function resize() {
-//   console.log("height: ", window.innerHeight, "px");
-//   console.log("width: ", window.innerWidth, "px");
-// }
