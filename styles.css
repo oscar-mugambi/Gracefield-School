@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+.footer-info {
+  display: none;
+}
+
 @font-face {
   font-family: myFirstFont;
   src: url(./Cabin_Sketch/CabinSketch-Regular.ttf);
@@ -805,4 +809,8 @@ a:hover {
   color: rgb(255, 255, 255, 0.6);
   border: 2px solid;
   border-radius: 50%;
+}
+
+.message-long {
+  font-family: "Roboto Condensed";
 }

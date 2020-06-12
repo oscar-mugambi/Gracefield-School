@@ -304,13 +304,13 @@ li img {
     top: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    height: 120vh;
+    height: 118vh;
     justify-content: center;
   }
 
   .text {
     width: 95%;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .list {
@@ -318,7 +318,7 @@ li img {
   }
 
   .container {
-    height: 130vh;
+    height: 125vh;
   }
 }
 

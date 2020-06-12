@@ -2,6 +2,7 @@ const menuBtn = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".mobile-links");
 const shade = document.querySelector(".shade");
+const darken = document.querySelector(".container");
 const navItems = document.querySelectorAll(".nav-item");
 
 let showMenu = false;
@@ -15,6 +16,7 @@ function toggleMenu() {
     menuBtn.classList.add("close");
     menu.classList.add("show");
     menuNav.classList.add("show");
+    darken.classList.add("dark");
     menuBtn.classList.add("show");
     shade.classList.add("dim");
     navItems.forEach((item) => item.classList.add("show"));
@@ -24,6 +26,7 @@ function toggleMenu() {
     menu.classList.remove("show");
     menuNav.classList.remove("show");
     menuBtn.classList.remove("show");
+    darken.classList.remove("dark");
     shade.classList.remove("dim");
     navItems.forEach((item) => item.classList.remove("show"));
     showMenu = false;

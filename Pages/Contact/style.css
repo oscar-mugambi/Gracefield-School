@@ -250,6 +250,16 @@ input:focus ~ .label {
 }
 
 @media (max-width: 1000px) {
+  .container {
+    position: absolute;
+    display: block;
+    top: 54px;
+    bottom: 0;
+    left: 0rem;
+    right: 0;
+    background: rgb(216, 216, 216);
+    z-index: -10;
+  }
   .flex {
     display: none;
   }
@@ -308,6 +318,11 @@ input:focus ~ .label {
   .update {
     height: 3.2rem;
     background-color: rgb(233, 230, 230);
+  }
+
+  .container.dark {
+    background: rgba(0, 0, 0, 0.794);
+    z-index: 10;
   }
 
   .nav-item {
@@ -421,6 +436,60 @@ input:focus ~ .label {
     margin: 0;
     padding: 1rem;
     font-size: 16px;
+  }
+
+  .adjacent {
+    display: none;
+  }
+  .contact-us {
+    display: none;
+  }
+
+  .adjacent-mobile {
+    width: 100%;
+    margin: 4rem auto;
+    text-align: center;
+  }
+
+  .map-marker {
+    color: rgb(238, 93, 93);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .detail-mobile {
+    font-size: 1.2rem;
+  }
+
+  .mobile-map:link,
+  .mobile-map:visited {
+    color: rgb(70, 70, 246);
+  }
+
+  .mobile-phone {
+    font-size: 2.2rem;
+    color: rgb(226, 75, 75);
+  }
+
+  .phone-number {
+    margin-bottom: 3rem;
+  }
+
+  .mobile-email {
+    margin-bottom: 1rem;
+    color: rgb(226, 75, 75);
+  }
+  .mobile-email-text {
+    margin-bottom: 3rem;
+  }
+
+  .clock {
+    font-size: 2rem;
+    color: rgb(226, 75, 75);
+  }
+
+  .fa-envelope {
+    font-size: 2rem;
   }
 }
 
