@@ -232,7 +232,7 @@ a:hover {
     letter-spacing: 1px;
     line-height: 30px;
     color: rgb(47, 47, 47);
-    font-size: 17.5px;
+    font-size: 19px;
     padding-right: 16px;
     padding-left: 16px;
   }
@@ -276,7 +276,7 @@ a:hover {
     position: relative;
     /* background: #c5c5c5; jump here*/
     background: #c03131e1;
-    padding: 2.5rem;
+    padding: 1.5rem;
     width: 100%;
   }
 
