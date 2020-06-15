@@ -14,7 +14,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 nav {
@@ -250,15 +250,36 @@ input:focus ~ .label {
 }
 
 @media (max-width: 1000px) {
+  .heading-mobile {
+    position: relative;
+    top: -65px;
+    padding: 5rem;
+    background: #c03131;
+    /* background: rgb(15, 157, 200); */
+  }
+
+  .reach-out {
+    color: white;
+    margin-top: 1rem;
+    font-size: 20px;
+  }
+
+  .envelope-big {
+    font-size: 5rem;
+  }
+
+  body {
+    background: rgb(236, 236, 236);
+  }
   .container {
     position: absolute;
     display: block;
-    top: 54px;
-    bottom: 0;
+    top: -64px;
+    bottom: 1rem;
     left: 0rem;
     right: 0;
-    background: rgb(216, 216, 216);
-    z-index: -10;
+    background: rgb(236, 236, 236);
+    z-index: -1;
   }
   .flex {
     display: none;
@@ -323,6 +344,7 @@ input:focus ~ .label {
   .container.dark {
     background: rgba(0, 0, 0, 0.794);
     z-index: 10;
+    transition: 0.3s ease-in;
   }
 
   .nav-item {
@@ -446,6 +468,7 @@ input:focus ~ .label {
   }
 
   .adjacent-mobile {
+    position: relative;
     width: 100%;
     margin: 4rem auto;
     text-align: center;

@@ -138,13 +138,22 @@ a:hover {
 
 .message-long {
   display: block;
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
+  font-family: "Roboto Condensed";
   font-size: 1rem;
   padding-top: 1rem;
   color: white;
   width: 75%;
   line-height: 1.8rem;
   letter-spacing: 0.7px;
+}
+
+.message-long-wide {
+  color: white;
+  line-height: 36px;
+  letter-spacing: 2px;
+  font-size: 18px;
+  margin-left: 6px;
 }
 
 .btn:link,
@@ -205,10 +214,27 @@ a:hover {
 .footer {
   display: none;
 }
+.message-long-narrow {
+  display: none;
+}
 
 @media (max-width: 1000px) {
   body {
     background-color: rgb(233, 233, 233);
+  }
+
+  .message-long-wide {
+    display: none;
+  }
+  .message-long-narrow {
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: rgb(47, 47, 47);
+    font-size: 17.5px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   .dark {
@@ -248,7 +274,8 @@ a:hover {
   .mobile {
     display: inline-block;
     position: relative;
-    background: #d8d8d8;
+    /* background: #c5c5c5; jump here*/
+    background: #c03131e1;
     padding: 2.5rem;
     width: 100%;
   }
@@ -259,8 +286,8 @@ a:hover {
 
   .mobile p {
     position: relative;
-    font-size: 17px;
-    letter-spacing: 0.5px;
+    font-size: 18px;
+    letter-spacing: 0.7px;
     padding-top: 0;
     text-align: center;
   }
@@ -447,13 +474,14 @@ a:hover {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
     font-size: 2.8rem;
-    margin-top: -5rem;
-    color: #a52a2a;
+    margin-top: -6rem;
+    color: #3f3e3e;
     position: relative;
     text-align: center;
     width: 100%;
     margin-bottom: 0;
-    padding: 1rem 0.5rem;
+    padding: 2rem 0.5rem 2rem;
+    background-color: rgb(233, 233, 233);
   }
 
   .message-long {
@@ -484,7 +512,7 @@ a:hover {
     height: 100vh;
     transition: all 0.6s ease-out;
     /* background-color: rgb(35, 74, 202); */
-    background-color: #a52a2a;
+    background-color: #c03131e1;
     z-index: 100000;
     display: none;
     position: relative;
@@ -807,8 +835,6 @@ a:hover {
   font-size: 2rem;
   padding: 0.5rem;
   color: rgb(255, 255, 255, 0.6);
-  border: 2px solid;
-  border-radius: 50%;
 }
 
 .message-long {
