@@ -7,7 +7,7 @@ const navItems = document.querySelectorAll(".nav-item");
 const messageInfo = document.querySelector(".message");
 const ghost = document.querySelector(".ghost");
 const darken = document.querySelector(".darken");
-
+document.body.style.zoom = "100%";
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);

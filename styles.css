@@ -33,7 +33,7 @@ nav {
   width: 100%;
   background: transparent;
   display: flex;
-  /* justify-content: center; */
+  justify-content: space-around;
 }
 
 .responsive-nav {
@@ -53,19 +53,15 @@ nav {
   display: none;
 }
 
-.nav__links {
-  position: relative;
-  margin-left: 4rem;
-}
-.nav__links2 {
-  position: relative;
-  left: 16rem;
-}
-
 .logo {
   position: relative;
-  left: 50%;
-  height: 6rem;
+  left: 4%;
+  height: 5rem;
+}
+
+.altered {
+  position: relative;
+  color: black;
 }
 
 nav ul li {
@@ -119,6 +115,7 @@ a:hover {
   height: 100vh;
   z-index: -99;
   margin-top: 0rem;
+  background-repeat: repeat-y;
 }
 
 .message {
@@ -134,6 +131,8 @@ a:hover {
   font-size: 4.1rem;
   letter-spacing: 2px;
   color: #137cf3f6;
+  margin-left: 26px;
+  margin-top: -25px;
 }
 
 .message-long {
@@ -153,7 +152,7 @@ a:hover {
   line-height: 36px;
   letter-spacing: 2px;
   font-size: 18px;
-  margin-left: 6px;
+  margin-left: 31px;
 }
 
 .btn:link,
@@ -165,6 +164,7 @@ a:hover {
   text-decoration: none;
   border-radius: 200px;
   color: white;
+  margin-left: 33px;
 }
 
 .btn:hover,
@@ -219,15 +219,25 @@ a:hover {
 }
 
 @media (max-width: 1000px) {
+  .message {
+    display: none;
+  }
   body {
     background-color: rgb(233, 233, 233);
   }
 
+  .message {
+    margin: auto;
+    max-width: none;
+  }
+
   .message-long-wide {
     display: none;
+    position: relative;
   }
   .message-long-narrow {
     display: block;
+    position: relative;
     text-align: center;
     letter-spacing: 1px;
     line-height: 30px;
@@ -235,6 +245,7 @@ a:hover {
     font-size: 19px;
     padding-right: 16px;
     padding-left: 16px;
+    width: 100%;
   }
 
   .dark {
@@ -277,6 +288,7 @@ a:hover {
     /* background: #c5c5c5; jump here*/
     background: #c03131e1;
     padding: 1.5rem;
+    padding-bottom: 3px;
     width: 100%;
   }
 
@@ -461,9 +473,10 @@ a:hover {
 
   .message {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     right: 0;
-    max-width: 40rem;
+    /* max-width: 40rem; */
+    justify-content: center;
     margin-top: 5rem;
     margin-left: 0;
     padding-top: 1rem;
@@ -471,6 +484,7 @@ a:hover {
     margin-bottom: 2rem;
   }
   .message-short {
+    margin-left: 0;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
     font-size: 2.8rem;
@@ -839,4 +853,10 @@ a:hover {
 
 .message-long {
   font-family: "Roboto Condensed";
+}
+
+.altered {
+  position: relative;
+  top: 5px;
+  color: rgb(0, 0, 0);
 }
