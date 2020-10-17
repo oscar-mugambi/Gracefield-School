@@ -286,7 +286,8 @@ a:hover {
     display: inline-block;
     position: relative;
 
-    background: #c03131e1;
+    /* background: #c03131e1; */
+    background: #333333f3;
     padding: 1.5rem;
     padding-bottom: 3px;
     width: 100%;
@@ -294,7 +295,8 @@ a:hover {
 
   .mobile-center {
     position: relative;
-    color: rgb(29, 28, 28);
+    /* color: rgb(29, 28, 28); */
+    color: rgba(252, 252, 252, 0.7);
   }
 
   .mobile p {
@@ -307,7 +309,7 @@ a:hover {
 
   .mobile-center span {
     font-weight: 600;
-    color: rgb(36, 34, 34);
+    color: rgba(252, 252, 252, 0.8);
   }
 
   .two {
@@ -872,7 +874,7 @@ a:hover {
 .altered {
   position: relative;
   top: 5px;
-  color: rgb(51, 49, 49);
+  color: rgb(189, 185, 185);
 }
 
 .paragraph-1 {
