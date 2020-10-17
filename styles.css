@@ -285,7 +285,7 @@ a:hover {
   .mobile {
     display: inline-block;
     position: relative;
-    /* background: #c5c5c5; jump here*/
+
     background: #c03131e1;
     padding: 1.5rem;
     padding-bottom: 3px;
@@ -293,7 +293,7 @@ a:hover {
   }
 
   .mobile-center {
-    margin: auto;
+    position: relative;
     color: rgb(29, 28, 28);
   }
 
@@ -302,12 +302,12 @@ a:hover {
     font-size: 18px;
     letter-spacing: 0.7px;
     padding-top: 0;
-    text-align: center;
+    line-height: 1.8rem;
   }
 
   .mobile-center span {
     font-weight: 600;
-    color: rgb(46, 44, 44);
+    color: rgb(36, 34, 34);
   }
 
   .two {
