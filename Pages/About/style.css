@@ -106,7 +106,7 @@ a:hover {
   margin: auto;
   font-size: 1rem;
   letter-spacing: 0.8px;
-  line-height: 1.9rem;
+  line-height: 1.93rem;
   display: flex;
   font-family: Montserrat;
 
@@ -137,10 +137,11 @@ a:hover {
   margin-right: 4rem;
 }
 
-.about-p span {
+.about-p .staff,
+.mission {
   width: 100%;
   color: #a52a2a;
-  font: 1.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -488,4 +489,23 @@ a:hover {
   position: relative;
   margin-top: -5px;
   font-size: 18px;
+}
+
+.about-p br {
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: 0.4rem; /* change this to whatever height you want it */
+}
+
+span .staff {
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: 1rem; /* change this to whatever height you want it */
+}
+
+.paragraph-3 {
+  margin-top: 2rem;
+}
+.paragraph-4 {
+  margin-top: 1rem;
 }

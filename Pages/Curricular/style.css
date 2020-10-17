@@ -127,6 +127,7 @@ a:hover {
 
 .li-list {
   position: relative;
+  width: 96%;
 }
 
 li img {
