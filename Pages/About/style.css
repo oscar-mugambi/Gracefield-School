@@ -494,7 +494,7 @@ a:hover {
 .about-p br {
   display: block; /* makes it have a width */
   content: ""; /* clears default height */
-  margin-top: 0.4rem; /* change this to whatever height you want it */
+  margin-top: 0.8rem; /* change this to whatever height you want it */
 }
 
 span .staff {
