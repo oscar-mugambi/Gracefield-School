@@ -294,6 +294,7 @@ a:hover {
 
   .mobile-center {
     margin: auto;
+    color: rgb(29, 28, 28);
   }
 
   .mobile p {
@@ -305,7 +306,8 @@ a:hover {
   }
 
   .mobile-center span {
-    font-weight: 700;
+    font-weight: 600;
+    color: rgb(46, 44, 44);
   }
 
   .two {
@@ -870,7 +872,7 @@ a:hover {
 .altered {
   position: relative;
   top: 5px;
-  color: rgb(0, 0, 0);
+  color: rgb(51, 49, 49);
 }
 
 .paragraph-1 {
