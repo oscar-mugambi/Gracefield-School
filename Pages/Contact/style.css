@@ -266,6 +266,157 @@ input:focus ~ .label {
     font-family: "Poppins", sans-serif;
   }
 
+  .responsive-nav {
+    display: flex;
+    background-color: #a52a2a;
+    height: 55px;
+  }
+  .responsive-logo {
+    display: flex;
+    display: inline-block;
+    justify-content: flex-start;
+    margin-left: 0.8rem;
+    height: 3rem;
+    position: relative;
+    top: -6px;
+  }
+
+  .show {
+    visibility: visible;
+  }
+
+  .column-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10000;
+  }
+  .column {
+    position: absolute;
+  }
+
+  .mobile-links {
+    display: flex;
+    width: 13rem;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    height: 100vh;
+
+    transition: all 0.6s ease-out;
+    background-color: #a52a2a;
+    z-index: 100000;
+    display: none;
+    position: relative;
+  }
+  .update {
+    height: 3.2rem;
+    background-color: rgb(233, 230, 230);
+  }
+
+  .container.dark {
+    background-color: rgba(0, 0, 0, 0.794);
+
+    opacity: 1;
+    transition: 0.3s ease-in;
+  }
+
+  .nav-item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 2px solid rgba(255, 255, 255, 0.349);
+    width: 100%;
+  }
+
+  .nav-item:first-child {
+    margin-top: 0.2rem;
+    border-top: none;
+  }
+  .anchor-item:visited,
+  .anchor-item:link {
+    color: rgb(224, 221, 221);
+    position: relative;
+
+    margin-left: 1rem;
+
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .update-link:visited,
+  .update-link:link {
+    color: black;
+  }
+  .show {
+    display: flex;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+    opacity: 1;
+  }
+
+  .line {
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 3px;
+  }
+
+  .menu {
+    display: flex;
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    z-index: 100000;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    padding: 5px;
+    top: 5px;
+    margin-right: 5px;
+
+    transition: all 0.4s ease-in;
+  }
+
+  .flex {
+    display: none;
+  }
+  .responsive-title {
+    position: relative;
+    top: -2px;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    margin-left: 0.6rem;
+    color: rgb(240, 235, 235);
+  }
+
+  .mobile-head {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    top: -10px;
+  }
+  .mobile-head-footer {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    top: -17px;
+    color: rgb(219, 219, 22);
+  }
+  .active-responsive {
+    background-color: rgba(2, 2, 2, 0.589);
+  }
+
+  .form-container {
+    display: none;
+  }
+
   section .content {
     display: block;
   }
@@ -279,17 +430,13 @@ input:focus ~ .label {
   .flex {
     display: none;
   }
-  .mobile-links {
-    display: none;
-  }
+
   .form-container {
     display: none;
   }
 
   .contact {
     position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,7 +446,6 @@ input:focus ~ .label {
 
   .contact .content {
     max-width: 800px;
-    text-align: center;
   }
 
   .contact .content h2 {
@@ -312,32 +458,62 @@ input:focus ~ .label {
     color: #fff;
   }
 
-  .container {
+  .container-mobile {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .container.contactInfo {
+  .container-mobile.contactInfo {
     width: 50%;
     display: flex;
     flex-direction: column;
   }
 
-  .container .contactInfo .box {
+  .container-mobile .contactInfo .box {
     position: relative;
-    padding: 20px 0;
+
     display: flex;
+    margin-left: 1rem;
   }
 
-  .container .contactInfo.box .icon {
-    min-width: 60px;
-    height: 60px;
-    background: #fff;
+  .container-mobile .contactInfo .box:first-child {
+    margin-top: 2rem;
+  }
+
+  .container-mobile .contactInfo .box .icon {
+    height: 55px;
+    width: 55px;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    margin-top: 22px;
+  }
+
+  .container-mobile .contactInfo .box .icon-one {
+    margin-top: 27px;
+  }
+
+  .container-mobile .contactInfo .box .text {
+    display: flex;
+    margin: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+  }
+
+  .container-mobile .contactInfo .box .text h2 {
+    font-weight: 500;
+    color: #a52a2a;
+  }
+
+  .social-media {
+    margin-right: 25px;
   }
 }
 
@@ -349,8 +525,8 @@ input:focus ~ .label {
     top: -65px;
     padding: 5rem;
     background: #c03131;
-    
   }
+}
 
   .reach-out {
     color: white;
