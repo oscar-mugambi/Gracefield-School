@@ -14,7 +14,7 @@ body {
   font-size: 1.1em;
   line-height: 1.5;
   text-align: center;
-  background: black;
+  background-color: black;
 }
 
 .responsive-nav {
@@ -356,9 +356,11 @@ h3 {
 }
 
 #showcase {
+  position: relative;
   min-height: 450px;
   color: #fff;
   text-align: center;
+  z-index: -1;
 }
 
 #showcase .bg-image {
@@ -383,7 +385,7 @@ h3 {
 }
 
 #showcase h1 {
-  padding-top: 50px;
+  padding-top: 90px;
   padding-bottom: 0;
 }
 
@@ -455,6 +457,13 @@ h3 {
     columns: 2;
     column-gap: 2em;
   } */
+
+  #showcase {
+    position: relative;
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+  }
 
   #section-a .content-text p {
     padding-top: 0;
