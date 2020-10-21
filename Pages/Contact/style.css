@@ -441,13 +441,6 @@ input:focus ~ .label {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.9),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url(../../img/curriculum.jpg);
-    background-size: cover;
   }
 
   .contact .content {
