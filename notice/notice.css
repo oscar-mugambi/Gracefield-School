@@ -180,10 +180,9 @@ button:hover {
   .menu {
     display: flex;
     display: inline-block;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
-
     opacity: 1;
     visibility: visible;
     z-index: 100000;
