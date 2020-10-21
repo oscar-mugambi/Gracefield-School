@@ -69,9 +69,9 @@ p {
   padding-bottom: 2em;
 }
 
-#section-b {
+/* #section-b {
   padding: 2em 1em 1em;
-}
+} */
 
 #section-b ul {
   list-style: none;
@@ -89,7 +89,7 @@ p {
   padding: 1.5em;
 }
 
-#sectionn-c {
+#section-c {
   background: #fff;
   color: #333;
   padding: 2em;
@@ -118,15 +118,15 @@ p {
 /* Media Queries */
 
 @media (min-width: 700px) {
-  .grid {
+  /* .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-  }
+  } */
 
-  #section-a .content-text {
+  /* #section-a .content-text {
     columns: 2;
     column-gap: 2em;
-  }
+  } */
 
   #section-a .content-text p {
     padding-top: 0;
@@ -148,6 +148,6 @@ p {
   }
 
   #section-b li {
-    width: 31%;
+    width: 100%;
   }
 }
