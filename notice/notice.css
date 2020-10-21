@@ -53,6 +53,11 @@ p {
   opacity: 0.4;
 }
 
+.recruiting {
+  background-color: rgb(67, 67, 67);
+  color: white;
+}
+
 #showcase h1 {
   padding-top: 100px;
   padding-bottom: 0;
@@ -66,7 +71,6 @@ p {
 #section-a {
   background: #eaeaea;
   color: #333;
-  padding-bottom: 2em;
 }
 
 /* #section-b {
