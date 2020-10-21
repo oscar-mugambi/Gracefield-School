@@ -7,9 +7,86 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
       rel="stylesheet"
     />
+    <script
+    src="https://kit.fontawesome.com/c5a4c93ad5.js"
+    crossorigin="anonymous"
+  ></script>
+  
     <link rel="stylesheet" href="notice.css" />
     <title>Notice Board</title>
   </head>
+
+  <!-- Navigation -->
+  <nav class="flex">
+    <ul class="nav__links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a class="a-tags" href="./Pages/About/About.html">About Us</a></li>
+      <li>
+        <a class="a-tags" href="./Pages/Curricular/curricular.html"
+          >Curriculum</a
+        >
+      </li>
+    </ul>
+    <div class="responsive-logo">
+      <img class="logo" src="../logo.png" alt="ogo" />
+    </div>
+   
+    <ul class="nav__links2">
+      <li>
+        <a class="a-tags" href="./Pages/Extra/extra.html">Extra Curricular</a>
+      </li>
+      <li>
+        <a class="a-tags" href="./Pages/Gallery/Gallery.html">Gallery</a>
+      </li>
+      <li>
+        <a class="a-tags" href="./Pages/Contact/Contact.html">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="responsive-nav">
+    <div class="responsive-logo">
+      <img class="responsive-logo" src="../logo.png" alt="" />
+    </div>
+    <div class="responsive-title">
+      <p class="mobile-head">Gracefield Schools</p>
+      <br />
+      <p class="mobile-head-footer">Above and & Beyond</p>
+    </div>
+    <div class="menu">
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+  </nav>
+  <div class="column">
+    <ul class="mobile-links">
+      <li onclick="location.href='../index.html'" class="nav-item active-responsive"><a class="anchor-item" href="index.html">Home</a></li>
+      <li onclick="location.href='.../Pages/About/About.html'" class="nav-item"><a class="anchor-item" href="../Pages/About/About.html">About Us</a></li>
+      <li onclick="location.href='../Pages/Curricular/curricular.html'" class="nav-item">
+        <a class="anchor-item" href="../Pages/Curricular/curricular.html">Curriculum</a>
+      </li>
+      <li onclick="location.href='../Pages/Extra/extra.html'" class="nav-item">
+        <a class="anchor-item"  href="../Pages/Extra/extra.html">Extra Curricular</a>
+      </li>
+      <li onclick="location.href='../Pages/GalleryMobile/Gallery.html'" class="nav-item">
+        <a class="anchor-item" href="../Pages/GalleryMobile/Gallery.html"
+          >Gallery</a
+        >
+      </li>
+      <li onclick="location.href='../Pages/Contact/Contact.html'" class="nav-item"><a class="anchor-item" href="../Pages/Contact/Contact.html">Contact</a></li>
+      <li class="nav-item update">
+        <a class="anchor-item update-link" href="../notice/notice.html">Notice Board</a>
+      </li>
+      <li onclick="location.href='../Pages/Video/video.html'" class="nav-item">
+        <a class="anchor-item" href="../Pages/Video/video.html"
+          >Virtual Tour</a
+        >
+      </li>
+    </ul>
+  </div>
+  </div>
+  <div class="darken"></div>
   <body>
     <header id="showcase" class="grid">
       <div class="bg-image"></div>
@@ -95,4 +172,6 @@
       </section> -->
     </main>
   </body>
+
+  <script src="menu.js"></script>
 </html>
