@@ -384,13 +384,13 @@ h3 {
 }
 
 #showcase h1 {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 0;
 }
 
 #showcase .content-wrap,
 #section-a .content-wrap {
-  padding: 0 1.5em;
+  padding: 0 1.5em 3rem;
 }
 
 #section-a {
