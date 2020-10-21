@@ -494,13 +494,17 @@ input:focus ~ .label {
     margin-top: 22px;
   }
 
+  .box-icons {
+    margin-top: 2rem;
+  }
+
   .container-mobile .contactInfo .box .icon-one {
     margin-top: 27px;
   }
 
   .container-mobile .contactInfo .box .text {
     display: flex;
-    margin: 20px;
+    margin: 20px 0 20px 38px;
     font-size: 16px;
     color: #fff;
     flex-direction: column;
