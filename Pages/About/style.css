@@ -8,6 +8,8 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
 }
 
 @font-face {
@@ -458,11 +460,6 @@ a:hover {
   to {
     opacity: 1;
   }
-}
-
-* {
-  font-family: "Roboto Condensed", sans-serif;
-  letter-spacing: 0.5px;
 }
 
 .footer-info {
