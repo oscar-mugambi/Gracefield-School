@@ -407,6 +407,7 @@ input:focus ~ .label {
     display: inline-block;
     font-size: 13px;
     top: -17px;
+
     color: rgb(219, 219, 22);
   }
   .active-responsive {

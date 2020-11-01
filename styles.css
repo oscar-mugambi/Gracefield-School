@@ -471,8 +471,9 @@ a:hover {
   .mobile-head-footer {
     position: relative;
     display: inline-block;
-    font-size: 13px;
+    font-size: 15px;
     top: -23px;
+    left: 3px;
     color: rgb(219, 219, 22);
   }
   .active-responsive {
@@ -635,7 +636,7 @@ a:hover {
 
 @media (max-width: 400px) {
   .mobile-head-footer {
-    font-size: 10px;
+    font-size: 11px;
   }
   .message-short {
     font-size: 36px;
