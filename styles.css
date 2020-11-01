@@ -731,6 +731,10 @@ a:hover {
     display: none;
   }
 
+  .details {
+    display: none;
+  }
+
   .container {
     display: block;
     margin: 0 auto;
