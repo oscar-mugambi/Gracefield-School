@@ -10,8 +10,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(34, 34, 34);
-  background-image: url(../../img/backgrounds/abc.jpg);
+  background-color: #a52a2ab3;
 }
 html,
 body {
@@ -279,6 +278,11 @@ button:hover {
 }
 
 @media (max-width: 1000px) {
+  html,
+  body {
+    padding-top: 0;
+  }
+
   .galleries {
     display: block;
     margin-top: 3rem;

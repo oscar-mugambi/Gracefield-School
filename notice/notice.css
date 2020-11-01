@@ -244,6 +244,7 @@ button:hover {
     font-size: 13px;
     top: -20px;
     color: rgb(219, 219, 22);
+    left: -5px;
   }
   .active-responsive {
     background-color: rgba(2, 2, 2, 0.589);
