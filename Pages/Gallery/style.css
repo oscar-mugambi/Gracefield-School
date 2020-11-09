@@ -46,7 +46,8 @@ body {
 #i2,
 #i3,
 #i4,
-#i5 {
+#i5,
+#i6 {
   display: none;
 }
 
@@ -122,7 +123,8 @@ label span {
 #i2:checked ~ #two,
 #i3:checked ~ #three,
 #i4:checked ~ #four,
-#i5:checked ~ #five {
+#i5:checked ~ #five,
+#i6:checked ~ #six {
   z-index: 9;
   animation: scroll 1s ease-in-out;
 }
@@ -131,7 +133,8 @@ label span {
 #i2:checked ~ #nav_slide #dot2,
 #i3:checked ~ #nav_slide #dot3,
 #i4:checked ~ #nav_slide #dot4,
-#i5:checked ~ #nav_slide #dot5 {
+#i5:checked ~ #nav_slide #dot5,
+#i6:checked ~ #nav_slide #dot6 {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
