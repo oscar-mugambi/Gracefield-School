@@ -56,7 +56,7 @@ nav {
 .logo {
   position: relative;
   left: 4%;
-  height: 5rem;
+  height: 4.5rem;
 }
 
 .altered {
@@ -262,12 +262,12 @@ a:hover {
   .message-long-narrow {
     display: block;
     position: relative;
-    text-align: center;
     line-height: 35px;
     color: rgb(47, 47, 47);
     font-size: 18px;
-    padding: 0 18px;
     width: 100%;
+    text-align: center;
+    padding: 0 18px;
   }
 
   .dark {
@@ -307,7 +307,7 @@ a:hover {
   .mobile {
     display: inline-block;
     position: relative;
-
+    text-align: center;
     background: #972727;
 
     padding: 1.5rem;
@@ -623,6 +623,13 @@ a:hover {
 .motto {
   font-weight: bold;
   font-size: 1.4rem;
+}
+
+@media (max-width: 490px) {
+  .mobile {
+    text-align: left;
+    padding-left: 2.5rem;
+  }
 }
 
 @media (max-width: 435px) {

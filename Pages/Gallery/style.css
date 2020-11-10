@@ -10,7 +10,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #a52a2ab3;
+  /* background-color: #aa2a2ab3; */
+  background-color: #b53838;
 }
 html,
 body {
@@ -47,7 +48,8 @@ body {
 #i3,
 #i4,
 #i5,
-#i6 {
+#i6,
+#i7 {
   display: none;
 }
 
@@ -124,7 +126,8 @@ label span {
 #i3:checked ~ #three,
 #i4:checked ~ #four,
 #i5:checked ~ #five,
-#i6:checked ~ #six {
+#i6:checked ~ #six,
+#i7:checked ~ #seven {
   z-index: 9;
   animation: scroll 1s ease-in-out;
 }
@@ -134,7 +137,8 @@ label span {
 #i3:checked ~ #nav_slide #dot3,
 #i4:checked ~ #nav_slide #dot4,
 #i5:checked ~ #nav_slide #dot5,
-#i6:checked ~ #nav_slide #dot6 {
+#i6:checked ~ #nav_slide #dot6,
+#i7:checked ~ #nav_slide #dot7 {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -176,7 +180,7 @@ label span {
 }
 
 .logo {
-  height: 5rem;
+  height: 4rem;
 }
 
 .nav__links-li {
