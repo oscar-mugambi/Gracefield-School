@@ -10,6 +10,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-image: url(../../img/backgrounds/abc.jpg);
   /* background-color: #aa2a2ab3; */
   background-color: #b53838;
 }
@@ -49,7 +50,10 @@ body {
 #i4,
 #i5,
 #i6,
-#i7 {
+#i7,
+#i8,
+#i9,
+#i10 {
   display: none;
 }
 
@@ -127,7 +131,10 @@ label span {
 #i4:checked ~ #four,
 #i5:checked ~ #five,
 #i6:checked ~ #six,
-#i7:checked ~ #seven {
+#i7:checked ~ #seven,
+#i8:checked ~ #eight,
+#i9:checked ~ #nine,
+#i10:checked ~ #ten {
   z-index: 9;
   animation: scroll 1s ease-in-out;
 }
@@ -138,7 +145,10 @@ label span {
 #i4:checked ~ #nav_slide #dot4,
 #i5:checked ~ #nav_slide #dot5,
 #i6:checked ~ #nav_slide #dot6,
-#i7:checked ~ #nav_slide #dot7 {
+#i7:checked ~ #nav_slide #dot7,
+#i8:checked ~ #nav_slide #dot8,
+#i9:checked ~ #nav_slide #dot9,
+#i10:checked ~ #nav_slide #dot10 {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
