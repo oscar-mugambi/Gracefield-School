@@ -350,7 +350,7 @@ button:hover {
   .menu {
     display: flex;
     display: inline-block;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
 
@@ -400,6 +400,7 @@ button:hover {
     padding: 5px;
     top: 7px;
     margin-right: 5px;
+
     /* border: 1px solid rgba(0, 0, 0, 0.575); */
     /* background-color: rgb(26, 56, 153); */
   }
