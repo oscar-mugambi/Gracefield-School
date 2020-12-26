@@ -19,6 +19,12 @@ body {
   background-color: black;
 }
 
+.admForm {
+  color: rgb(77, 0, 255);
+  font-size: 22px;
+  font-weight: 600;
+}
+
 .responsive-nav {
   display: none;
 }
